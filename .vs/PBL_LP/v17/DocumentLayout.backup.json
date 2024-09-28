@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\dao\\helperdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\helperdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\views\\aluguel\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\aluguel\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\views\\aluguel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\aluguel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\models\\aluguelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\aluguelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\dao\\alugueldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\alugueldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\controllers\\alguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\alguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\views\\usuario\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\usuario\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\piero\\desktop\\workspace\\codes\\c#\\pbl-part-1-main\\pbl_lp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:24:57.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowDwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T21:22:44.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HelperDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\DAO\\HelperDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\HelperDAO.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\DAO\\HelperDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\HelperDAO.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvzEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:22:15.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form.cshtml",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Aluguel\\Form.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Aluguel\\Form.cshtml",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Aluguel\\Form.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Aluguel\\Form.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwv0AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T21:22:01.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form.cshtml",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T21:09:36.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Usuario\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Usuario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Usuario\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Usuario\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T21:09:22.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T21:09:18.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Models\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Models\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Models\\UsuarioViewModel.cs",
+              "RelativeToolTip": "PBL_LP\\Models\\UsuarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:08:53.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\DAO\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\UsuarioDAO.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\DAO\\UsuarioDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\UsuarioDAO.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:08:46.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:08:33.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Program.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Program.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Program.cs",
+              "RelativeToolTip": "PBL_LP\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:05:45.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AluguelDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\DAO\\AluguelDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\AluguelDAO.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\DAO\\AluguelDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\AluguelDAO.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:01:50.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlguelController.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Controllers\\AlguelController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\AlguelController.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Controllers\\AlguelController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\AlguelController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwv0gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:01:28.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T20:57:09.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AluguelViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Models\\AluguelViewModel.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Models\\AluguelViewModel.cs",
+              "ToolTip": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1-main\\PBL_LP\\Models\\AluguelViewModel.cs",
+              "RelativeToolTip": "PBL_LP\\Models\\AluguelViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T20:56:58.041Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

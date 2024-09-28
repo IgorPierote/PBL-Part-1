@@ -1,0 +1,38 @@
+﻿@model IEnumerable<UsuarioViewModel>
+@{
+    ViewData["Title"] = "Lista de Usuários";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista de Usuários</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Novo Usuário</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Data de Nascimento</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.CPF)</td>
+            <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+            <td>@Html.DisplayFor(modelItem => item.Email)</td>
+            <td>@Html.DisplayFor(modelItem => item.Telefone)</td>
+            <td>@Html.DisplayFor(modelItem => item.DataDeNascimento)</td>
+            <td>
+                <a asp-action="Edit" asp-route-cpf="@item.CPF" class="btn btn-warning">Editar</a> |
+                <a asp-action="Delete" asp-route-cpf="@item.CPF" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a>
+            </td>
+            </tr>
+        }
+    </tbody>
+</table>
