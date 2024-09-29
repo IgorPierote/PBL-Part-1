@@ -1,0 +1,58 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 15px, outset, #0d6efd;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+a{
+    margin-bottom: 10px;
+    font-weight:700;
+}
+
+
+.moving{
+    white-space: nowrap;
+    animation: moveText 5s linear infinite;
+
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+

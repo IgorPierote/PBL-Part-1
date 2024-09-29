@@ -1,13 +1,10 @@
-﻿@model List<SensorViewModel> 
+﻿@model List<SensorViewModel>
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml"; 
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Listagem de Sensores</h2>
-
-<a href="/sensor/create">Nova Empresa</a>
-<br />
-
+<h2> <span class="moving">Listagem de Sensores</span></h2>
+    <a asp-action="Create" class="btn btn-primary">Novo Sensor</a>
 <table class="table table-responsive">
     <tr>
         <th>Ações</th>
@@ -41,9 +38,8 @@
 </table>
 
 <script>
-    function apagarSensor(id) 
-    { 
-        if (confirm('Confirma a exclusão do registro?')) 
-        location.href = 'sensor/Delete?id=' + id; 
+    function apagarSensor(id) {
+        if (confirm('Confirma a exclusão do registro?'))
+            location.href = 'sensor/Delete?id=' + id;
     }
-    </script>
+</script>

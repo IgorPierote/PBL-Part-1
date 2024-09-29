@@ -4,7 +4,7 @@
     ViewData["Title"] = "Cadastro de Usuário";
 }
 
-<h2>@ViewData["Title"]</h2>
+<h2><span class="moving">@ViewData["Title"]</span></h2>
 
 <form asp-action="Salvar" method="post">
     <input type="hidden" name="Operacao" value="@ViewBag.Operacao" />
@@ -44,10 +44,11 @@
         <input asp-for="DataDeNascimento" class="form-control" type="date" />
         <span asp-validation-for="DataDeNascimento" class="text-danger"></span>
     </div>
-
+    </br>
     <div class="form-group">
         <input type="submit" value="Salvar" class="btn btn-primary" />
     </div>
+    </br>
 </form>
 
 <div>

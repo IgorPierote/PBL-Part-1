@@ -6,7 +6,7 @@ namespace PBL_LP.Models
     {
         [Required(ErrorMessage = "O CPF é obrigatório")]
         [StringLength(14, MinimumLength = 11, ErrorMessage = "O CPF deve ter entre 11 e 14 caracteres")]
-        [RegularExpression(@"^\d{3}\.\d{3}\.\d{3}-\d{2}$", ErrorMessage = "CPF inválido")]
+        [RegularExpression(@"^\d{11,14}$", ErrorMessage = "CPF inválido")]
         public string CPF { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "O Nome é obrigatório")]
