@@ -82,5 +82,13 @@ namespace PBL_LP.DAO
 
             return lista;
         }
+
+        public int ProximoId()
+        {
+            string sql = "select isnull(max(CodigoDoAluguel) +1, 1) as 'MAIOR' from Aluguel";
+            DataTable tabela = HelperDAO.ExecutaSelect(sql, null);
+            return Convert.ToInt32(tabela.Rows[0]["MAIOR"]);
+        }
+
     }
 }

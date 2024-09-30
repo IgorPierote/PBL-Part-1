@@ -43,6 +43,11 @@ namespace PBL_LP.Controllers
             return RedirectToAction("Index", "Aluguel");
         }
 
+        public IActionResult Sobre()
+        {
+            return RedirectToAction("Index", "Sobre");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

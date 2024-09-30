@@ -9,7 +9,6 @@ namespace PBL_LP.Models
         public int CodigoDoAluguel { get; set; }
 
         [Required(ErrorMessage = "O CNPJ é obrigatório")]
-        [StringLength(18, MinimumLength = 14, ErrorMessage = "O CNPJ deve ter entre 14 e 18 caracteres")]
         [RegularExpression(@"^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$", ErrorMessage = "CNPJ inválido")]
         public string CNPJ { get; set; } = string.Empty;
 

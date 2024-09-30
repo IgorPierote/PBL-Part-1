@@ -1,6 +1,6 @@
 ﻿namespace PBL_LP.Models
 {
-	public class CNPJ_Escolha
+	public class CNPJViewModel
 	{
 			public string CNPJ { get; set; }
 
