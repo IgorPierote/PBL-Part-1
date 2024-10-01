@@ -1,34 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\",
+  "WorkspaceRootPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\sobre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\sobre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\sobrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\sobrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\aluguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\controllers\\dashboard2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\dashboard2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\controllers\\dashboard1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\dashboard1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\controllers\\aluguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\aluguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\views\\dashboard2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\dashboard2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\views\\dashboard1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\dashboard1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\views\\aluguel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\aluguel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\pbl_lp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\pbl_lp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl-part-1\\pbl_lp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +66,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Sobre\\Index.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Sobre\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Sobre\\Index.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Sobre\\Index.cshtml",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\Login.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\Login.cs",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\Login.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\Login.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T01:01:41.546Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T19:09:57.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EmpresaController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\EmpresaController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\EmpresaController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\EmpresaController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\EmpresaController.cs",
+              "Title": "Dashboard2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\Dashboard2Controller.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\Dashboard2Controller.cs",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\Dashboard2Controller.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\Dashboard2Controller.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T01:00:12.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AluguelController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\AluguelController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\AluguelController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\AluguelController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\AluguelController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T01:00:11.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wC8AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T00:58:46.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SobreController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\SobreController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\SobreController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\SobreController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\SobreController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T00:58:42.305Z",
+              "WhenOpened": "2024-09-30T19:09:45.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAB4AAAA",
+              "Title": "AluguelController.cs",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\AluguelController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\AluguelController.cs",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\AluguelController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\AluguelController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T19:09:20.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\Dashboard1Controller.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\Dashboard1Controller.cs",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\Dashboard1Controller.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\Dashboard1Controller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T19:09:19.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Aluguel\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T00:54:35.547Z",
+              "WhenOpened": "2024-09-30T19:07:15.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Program.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Program.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Program.cs",
-              "RelativeToolTip": "PBL_LP\\Program.cs",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Login\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T19:03:27.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Dashboard2\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Dashboard2\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Dashboard2\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Dashboard2\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T19:02:56.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Dashboard1\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Dashboard1\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Dashboard1\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Dashboard1\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T19:02:34.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PBL_LP",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
+              "RelativeDocumentMoniker": "PBL_LP\\PBL_LP.csproj",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
+              "RelativeToolTip": "PBL_LP\\PBL_LP.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-30T19:02:04.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC0AAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T19:00:56.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAuwD0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T00:53:59.138Z",
+              "WhenOpened": "2024-09-30T19:00:37.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Program.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Program.cs",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Program.cs",
+              "RelativeToolTip": "PBL_LP\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T19:00:19.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T18:59:57.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL-Part-1\\PBL_LP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T18:59:42.993Z",
               "EditorCaption": ""
             }
           ]

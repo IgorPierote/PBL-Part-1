@@ -48,6 +48,21 @@ namespace PBL_LP.Controllers
             return RedirectToAction("Index", "Sobre");
         }
 
+        public IActionResult Dashboard1()
+        {
+            return RedirectToAction("Index", "Dashboard1");
+        }
+
+        public IActionResult Dashboard2()
+        {
+            return RedirectToAction("Index", "Dashboard2");
+        }
+
+        public IActionResult Login()
+        {
+            return RedirectToAction("Index", "Login");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
