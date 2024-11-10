@@ -1,0 +1,49 @@
+﻿@model EmpresaViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2><span class="moving">Cadastro de Empresa</span></h2>
+<form action="Salvar" method="post">
+    <input type="hidden" name="Operacao" value="@ViewBag.Operacao" />
+    <label for="CNPJ" class="control-label">CNPJ</label>
+    @if (ViewBag.Operacao == "I")
+    {
+        <input type="text" name="CNPJ" value="@Model.CNPJ" class="form-control" />
+    }
+    else
+    {
+        <input type="text" name="CNPJ" value="@Model.CNPJ" class="form-control disabled" readonly />
+    }
+    <span asp-validation-for="CNPJ" class="text-danger"></span>
+    <br />
+
+    <div class="caixa_texto">
+        <label for="NomeEmpresa" class="control-label">Nome da Empresa</label>
+        <input type="text" name="NomedaEmpresa" value="@Model.NomeDaEmpresa" />
+        <span asp-validation-for="NomeDaEmpresa" class="text-danger"></span>
+        <br />
+    </div>
+
+    <div class="caixa_texto">
+        <label for="Responsável" class="control-label">Nome do Responsável</label>
+        <input type="text" name="NomedoResponsavel" value="@Model.NomeDoResponsavel" />
+        <span asp-validation-for="NomeDoResponsavel" class="text-danger"></span>
+        <br />
+    </div>
+
+    <div class="caixa_texto">
+        <label for="Telefone" class="control-label">Telefone</label>
+        <input type="tel" name="telefone" value="@Model.Telefone" placeholder="(XX) XXXXX-XXXX" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode === 40 || event.charCode === 41 || event.charCode === 45">
+        <span asp-validation-for="Telefone" class="text-danger"></span>
+        <br />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+    </div>
+    </br>
+
+</form>
+
+<div>
+    <a asp-action="Index">Voltar para a Lista</a>
+</div>

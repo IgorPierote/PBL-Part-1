@@ -1,0 +1,68 @@
+﻿@model AluguelViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Cadastro de Aluguel";
+}
+
+<h2><span class="moving">@ViewData["Title"]</span></h2>
+
+<form asp-action="Salvar" method="post">
+    <input type="hidden" name="Operacao" value="@ViewBag.Operacao" />
+
+    <div class="form-group">
+        <label asp-for="CodigoDoAluguel" class="control-label"></label>
+        <input asp-for="CodigoDoAluguel" class="form-control" readonly="@(ViewBag.Operacao == "A")" />
+        <span asp-validation-for="CodigoDoAluguel" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" class="control-label">Empresa</label>
+        <select asp-for="CNPJ" asp-items="ViewBag.CNPJS" class="form-control"> </select>
+        <span asp-validation-for="CNPJ" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CodigoSensor" class="control-label"></label>
+        <select asp-for="CodigoSensor" asp-items="ViewBag.Sensores" class="form-control"> </select>
+        <span asp-validation-for="CodigoSensor" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Quantidade" class="control-label"></label>
+        <input asp-for="Quantidade" class="form-control" />
+        <span asp-validation-for="Quantidade" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DataDeInicio" class="control-label"></label>
+        <input asp-for="DataDeInicio" class="form-control" type="date" />
+        <span asp-validation-for="DataDeInicio" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DataDeFinalizacao" class="control-label"></label>
+        <input asp-for="DataDeFinalizacao" class="form-control" type="date" />
+        <span asp-validation-for="DataDeFinalizacao" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Preco" class="control-label"></label>
+        <input asp-for="Preco" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Preco" class="text-danger"></span>
+    </div>
+    </br>
+
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+    </div>
+    </br>
+</form>
+
+
+<div>
+    <a asp-action="Index">Voltar para a Lista</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

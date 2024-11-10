@@ -1,0 +1,47 @@
+﻿@model IEnumerable<UsuarioViewModel>
+@{
+    ViewData["Title"] = "Lista de Usuários";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><span class="moving">Lista de Usuários</span></h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Novo Usuário</a>
+</p>
+<table class="table table-bordered table-hover">
+    <thead class="thead-light">
+        <tr>
+            <th>Foto</th>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Data de Nascimento</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.FotoCaminho))
+                    {
+                        <img src="@Url.Content(item.FotoCaminho)" alt="Foto do Usuário" style="width:50px;height:50px;" />
+                    }
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.CPF)</td>
+                <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.Telefone)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataDeNascimento)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-cpf="@item.CPF" class="btn btn-warning">Editar</a> |
+                    <a asp-action="Delete" asp-route-cpf="@item.CPF" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

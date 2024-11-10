@@ -1,0 +1,42 @@
+﻿@model IEnumerable<AluguelViewModel>
+@{
+    ViewData["Title"] = "Lista de Aluguéis";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><span class="moving">Lista de Aluguéis</span></h2>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Novo Aluguel</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CodigoDoAluguel)</th>
+            <th>@Html.DisplayNameFor(model => model.CNPJ)</th>
+            <th>@Html.DisplayNameFor(model => model.CodigoSensor)</th>
+            <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+            <th>@Html.DisplayNameFor(model => model.DataDeInicio)</th>
+            <th>@Html.DisplayNameFor(model => model.DataDeFinalizacao)</th>
+            <th>@Html.DisplayNameFor(model => model.Preco)</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.CodigoDoAluguel)</td>
+                <td>@Html.DisplayFor(modelItem => item.CNPJ)</td>
+                <td>@Html.DisplayFor(modelItem => item.CodigoSensor)</td>
+                <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataDeInicio)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataDeFinalizacao)</td>
+                <td>@Html.DisplayFor(modelItem => item.Preco)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-codigoDoAluguel="@item.CodigoDoAluguel" class="btn btn-warning">Editar</a> |
+                    <a asp-action="Delete" asp-route-codigoDoAluguel="@item.CodigoDoAluguel" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este aluguel?');">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
