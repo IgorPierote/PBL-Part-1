@@ -73,7 +73,7 @@ namespace PBL_LP.DAO
         public List<SensorViewModel> Listagem()
         {
             List<SensorViewModel> lista = new List<SensorViewModel>();
-            string sql = "SELECT Sensor.Codigo, Nome, Descricao,ValorDoAluguel FROM Sensor inner join TipoSensor on Sensor.Tipo= TipoSensor.Codigo ORDER BY Sensor.Codigo";
+            string sql = "SELECT Sensor.id, Nome, Descricao,ValorDoAluguel FROM Sensor inner join TipoSensor on Sensor.Tipo= TipoSensor.id ORDER BY Sensor.id";
             DataTable tabela = HelperDAO.ExecutaSelect(sql, null);
 
             foreach (DataRow registro in tabela.Rows)
