@@ -7,88 +7,13 @@ using PBL_LP.Models;
 namespace PBL_LP.Controllers
 {
     [ServiceFilter(typeof(AutorizacaoFilter))]
-    public class AluguelController : Controller
+
+    public class AluguelController : PadraoController<AluguelViewModel>
     {
-        public IActionResult Index()
+        public AluguelController()
         {
-            AluguelDAO dao = new AluguelDAO();
-            List<AluguelViewModel> lista = dao.Listagem();
-            return View(lista);
-        }
-
-        public IActionResult Create()
-        {
-            try
-            {
-                PreparaListaSensoresParaCombo();
-                PreparaListaCNPJParaCombo();
-
-                ViewBag.Operacao = "I";
-                AluguelDAO DAO = new AluguelDAO();
-                AluguelViewModel aluguel = new AluguelViewModel();
-                aluguel.DataDeFinalizacao=DateTime.Now;
-                aluguel.DataDeInicio=DateTime.Now;
-                aluguel.CodigoDoAluguel = DAO.ProximoId();
-                return View("Form", aluguel);
-            }
-            catch (Exception erro)
-            {
-                return View("Error", new ErrorViewModel(erro.ToString()));
-            }
-        }
-
-        [HttpPost]
-        public IActionResult Salvar(AluguelViewModel aluguel, string Operacao)
-        {
-            try
-            {
-                AluguelDAO dao = new AluguelDAO();
-                if (Operacao == "I")
-                    dao.Inserir(aluguel);
-                else
-                    dao.Alterar(aluguel);
-                return RedirectToAction("Index");
-            }
-            catch (Exception erro)
-            {
-                PreparaListaSensoresParaCombo();
-                PreparaListaCNPJParaCombo();
-                return View("Error", new ErrorViewModel(erro.ToString()));
-            }
-        }
-
-        public IActionResult Edit(int codigoDoAluguel)
-        {
-            try
-            {
-                PreparaListaSensoresParaCombo();
-                PreparaListaCNPJParaCombo();
-                ViewBag.Operacao = "A";
-                AluguelDAO dao = new AluguelDAO();
-                AluguelViewModel aluguel = dao.Consulta(codigoDoAluguel);
-                if (aluguel == null)
-                    return RedirectToAction("Index");
-                else
-                    return View("Form", aluguel);
-            }
-            catch (Exception erro)
-            {
-                return View("Error", new ErrorViewModel(erro.ToString()));
-            }
-        }
-
-        public IActionResult Delete(int codigoDoAluguel)
-        {
-            try
-            {
-                AluguelDAO dao = new AluguelDAO();
-                dao.Excluir(codigoDoAluguel);
-                return RedirectToAction("Index");
-            }
-            catch (Exception erro)
-            {
-                return View("Error", new ErrorViewModel(erro.ToString()));
-            }
+            DAO = new AluguelDAO();
+            GeraProximoId = true;
         }
 
         private void PreparaListaCNPJParaCombo()

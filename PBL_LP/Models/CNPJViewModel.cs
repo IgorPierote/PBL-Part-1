@@ -1,6 +1,6 @@
 ﻿namespace PBL_LP.Models
 {
-	public class CNPJViewModel
+	public class CNPJViewModel:PadraoViewModel
 	{
 			public string CNPJ { get; set; }
 

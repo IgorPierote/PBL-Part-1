@@ -20,7 +20,7 @@ namespace PBL_LP.DAO
         private TipoSensorViewModel MontaTipoSensor(DataRow registro)
         {
             TipoSensorViewModel s = new TipoSensorViewModel();
-            s.Codigo = Convert.ToInt32(registro["Codigo"]);
+            s.Codigo = Convert.ToInt32(registro["Id"]);
             s.Nome = registro["Descricao"].ToString();
             return s;
         }

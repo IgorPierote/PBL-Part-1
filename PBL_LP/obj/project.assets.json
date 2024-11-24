@@ -470,24 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guind\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\guilh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
+      "projectUniqueName": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\PBL_LP.csproj",
       "projectName": "PBL_LP",
-      "projectPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
-      "packagesPath": "C:\\Users\\guind\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\obj\\",
+      "projectPath": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\PBL_LP.csproj",
+      "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\guind\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -542,7 +537,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,25 +4,20 @@ using System.Data;
 
 namespace PBL_LP.DAO
 {
-    public class AluguelDAO
+    public class AluguelDAO : PadraoDAO<AluguelViewModel>
     {
         public void Inserir(AluguelViewModel aluguel)
         {
-            string sql = "INSERT INTO Aluguel (CodigoDoAluguel, CNPJ, CodigoSensor, Quantidade, DataDeInicio, DataDeFinalizacao, Preco) " +
-                         "VALUES (@codigoDoAluguel, @cnpj, @codigoSensor, @quantidade, @dataDeInicio, @dataDeFinalizacao, @preco)";
-            HelperDAO.ExecutaSQL(sql, CriaParametros(aluguel));
+            HelperDAO.ExecutaProc("spInsert_Aluguel", CriaParametros(aluguel));
         }
+
 
         public void Alterar(AluguelViewModel aluguel)
         {
-            string sql = "UPDATE Aluguel SET CNPJ = @cnpj, CodigoSensor = @codigoSensor, " +
-                         "Quantidade = @quantidade, DataDeInicio = @dataDeInicio, " +
-                         "DataDeFinalizacao = @dataDeFinalizacao, Preco = @preco " +
-                         "WHERE CodigoDoAluguel = @codigoDoAluguel";
-            HelperDAO.ExecutaSQL(sql, CriaParametros(aluguel));
+            HelperDAO.ExecutaProc("spUpdate_Aluguel", CriaParametros(aluguel));
         }
 
-        private SqlParameter[] CriaParametros(AluguelViewModel aluguel)
+        protected override SqlParameter[] CriaParametros(AluguelViewModel aluguel)
         {
             SqlParameter[] parametros = new SqlParameter[7];
             parametros[0] = new SqlParameter("codigoDoAluguel", aluguel.CodigoDoAluguel);
@@ -35,15 +30,18 @@ namespace PBL_LP.DAO
             return parametros;
         }
 
-        public void Excluir(int codigoDoAluguel)
+        public void Excluir(int id)
         {
-            string sql = "DELETE FROM Aluguel WHERE CodigoDoAluguel = @codigoDoAluguel";
-            SqlParameter[] parametros = new SqlParameter[1];
-            parametros[0] = new SqlParameter("codigoDoAluguel", codigoDoAluguel);
-            HelperDAO.ExecutaSQL(sql, parametros);
+            var p = new SqlParameter[]
+            {
+                 new SqlParameter("id", id),
+                 new SqlParameter("tabela", "Aluguel")
+            };
+
+            HelperDAO.ExecutaProc("spDelete", p);
         }
 
-        private AluguelViewModel MontaAluguel(DataRow registro)
+        protected override AluguelViewModel MontaModel(DataRow registro)
         {
             AluguelViewModel a = new AluguelViewModel
             {
@@ -58,36 +56,46 @@ namespace PBL_LP.DAO
             return a;
         }
 
-        public AluguelViewModel Consulta(int codigoDoAluguel)
+        public AluguelViewModel Consulta(int id)
         {
-            string sql = "SELECT * FROM Aluguel WHERE CodigoDoAluguel = @codigoDoAluguel";
-            SqlParameter[] parametros = new SqlParameter[1];
-            parametros[0] = new SqlParameter("codigoDoAluguel", codigoDoAluguel);
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, parametros);
+            var p = new SqlParameter[]
+            {
+                new SqlParameter("id", id)
+            };
+
+            DataTable tabela = HelperDAO.ExecutaProcSelect("spConsulta", p);
 
             if (tabela.Rows.Count == 0)
                 return null;
             else
-                return MontaAluguel(tabela.Rows[0]);
+                return MontaModel(tabela.Rows[0]);
         }
 
         public List<AluguelViewModel> Listagem()
         {
             List<AluguelViewModel> lista = new List<AluguelViewModel>();
-            string sql = "SELECT * FROM Aluguel";
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, null);
+
+            DataTable tabela = HelperDAO.ExecutaProcSelect("spListagem", null);
 
             foreach (DataRow registro in tabela.Rows)
-                lista.Add(MontaAluguel(registro));
-
+                lista.Add(MontaModel(registro));
             return lista;
         }
 
         public int ProximoId()
         {
-            string sql = "select isnull(max(CodigoDoAluguel) +1, 1) as 'MAIOR' from Aluguel";
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, null);
+            var p = new SqlParameter[]
+            {
+                new SqlParameter("tabela", "Aluguel")
+            };
+
+            DataTable tabela = HelperDAO.ExecutaProcSelect("spProximoId", p);
             return Convert.ToInt32(tabela.Rows[0]["MAIOR"]);
+        }
+
+        protected override void SetTabela()
+        {
+            Tabela = "Aluguel";
         }
 
     }

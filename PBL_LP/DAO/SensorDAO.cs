@@ -5,32 +5,26 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PBL_LP.DAO
 {
-    public class SensorDAO
+    public class SensorDAO : PadraoDAO<SensorViewModel>
     {
         public void Inserir(SensorViewModel sensor)
         {
-            string sql =
-            "INSERT INTO Sensor (Codigo, Nome, Tipo, ValorDoAluguel) " +
-            "VALUES (@codigo, @nome, @tipo, @valorDoAluguel)";
-            HelperDAO.ExecutaSQL(sql, CriaParametros(sensor));
+            HelperDAO.ExecutaProc("spInsert_Sensor", CriaParametros(sensor));
         }
+
 
         public void Alterar(SensorViewModel sensor)
         {
-            string sql =
-            "UPDATE Sensor SET Nome = @nome, " +
-            "Tipo = @tipo, " +
-            "ValorDoAluguel = @valorDoAluguel " +
-            "WHERE Codigo = @codigo";
-            HelperDAO.ExecutaSQL(sql, CriaParametros(sensor));
+            HelperDAO.ExecutaProc("spUpdate_Sensor", CriaParametros(sensor));
         }
 
-        private SqlParameter[] CriaParametros(SensorViewModel sensor)
+        protected override SqlParameter[] CriaParametros(SensorViewModel sensor)
         {
             SqlParameter[] parametros = new SqlParameter[4];
-            parametros[0] = new SqlParameter("codigo", sensor.Codigo);
+            parametros[0] = new SqlParameter("Id", sensor.Id);
             parametros[1] = new SqlParameter("nome", sensor.Nome);
 			parametros[2] = new SqlParameter("tipo", sensor.Tipo);
+
 			if (sensor.ValorDoAluguel == null)
                 parametros[3] = new SqlParameter("valorDoAluguel", DBNull.Value); 
             else 
@@ -38,55 +32,59 @@ namespace PBL_LP.DAO
             return parametros;
         }
 
-        public void Excluir(int codigo)
+        public void Excluir(int id)
         {
-            string sql = "DELETE FROM Sensor WHERE Codigo = @codigo";
-            SqlParameter[] parametros = new SqlParameter[1];
-            parametros[0] = new SqlParameter("codigo", codigo);
-            HelperDAO.ExecutaSQL(sql, parametros);
+            var p = new SqlParameter[]
+            {
+                 new SqlParameter("id", id),
+                 new SqlParameter("tabela", "Sensor")
+            };
+            HelperDAO.ExecutaProc("spDelete", p);
         }
 
-        private SensorViewModel MontaSensor(DataRow registro)
+        protected override SensorViewModel MontaModel(DataRow registro)
         {
             SensorViewModel s = new SensorViewModel();
-            s.Codigo = Convert.ToInt32(registro["Codigo"]);
+            s.Id = Convert.ToInt32(registro["id"]);
             s.Nome = registro["Nome"].ToString();
-            s.Descricao = registro["Descricao"].ToString();
+            if (registro.Table.Columns.Contains("Descricao"))
+                s.Descricao = registro["Descricao"].ToString();
+            s.Tipo = Convert.ToInt32(registro["Tipo"]);
             if (registro["ValorDoAluguel"] != DBNull.Value)
                 s.ValorDoAluguel = Convert.ToDouble(registro["ValorDoAluguel"]);
             return s;
         }
 
-        public SensorViewModel Consulta(int codigo)
+        public SensorViewModel Consulta(int id)
         {
-            string sql = "SELECT Sensor.Codigo, Nome, Descricao,ValorDoAluguel FROM Sensor inner join TipoSensor on Tipo= TipoSensor.Codigo WHERE Sensor.Codigo = @codigo";
-            SqlParameter[] parametros = new SqlParameter[1];
-            parametros[0] = new SqlParameter("codigo", codigo);
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, parametros);
+            var p = new SqlParameter[]
+            {
+                new SqlParameter("id", id)
+            };
+
+            DataTable tabela = HelperDAO.ExecutaProcSelect("spConsulta", p);
 
             if (tabela.Rows.Count == 0)
                 return null;
             else
-                return MontaSensor(tabela.Rows[0]);
+                return MontaModel(tabela.Rows[0]);
         }
 
-        public List<SensorViewModel> Listagem()
+
+        public override List<SensorViewModel> Listagem()
         {
             List<SensorViewModel> lista = new List<SensorViewModel>();
-            string sql = "SELECT Sensor.id, Nome, Descricao,ValorDoAluguel FROM Sensor inner join TipoSensor on Sensor.Tipo= TipoSensor.id ORDER BY Sensor.id";
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, null);
+
+            DataTable tabela = HelperDAO.ExecutaProcSelect("Sp_ConsultaSensor", null);
 
             foreach (DataRow registro in tabela.Rows)
-                lista.Add(MontaSensor(registro));
-
+                lista.Add(MontaModel(registro));
             return lista;
         }
 
-        public int ProximoId()
+        protected override void SetTabela()
         {
-            string sql = "select isnull(max(Codigo) +1, 1) as 'MAIOR' from sensor";
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, null);
-            return Convert.ToInt32(tabela.Rows[0]["MAIOR"]);
+            Tabela = "Sensor";
         }
 
     }

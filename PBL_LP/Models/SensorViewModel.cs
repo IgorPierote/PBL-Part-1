@@ -1,8 +1,7 @@
 ﻿namespace PBL_LP.Models
 {
-    public class SensorViewModel
+    public class SensorViewModel:PadraoViewModel
     {
-        public int Codigo { get; set; }
         public string Nome { get; set; }
         public int Tipo { get; set; }
 

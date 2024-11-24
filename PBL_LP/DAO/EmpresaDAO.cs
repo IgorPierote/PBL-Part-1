@@ -4,78 +4,85 @@ using System.Data;
 
 namespace PBL_LP.DAO
 {
-    public class EmpresaDAO
-    {
+	public class EmpresaDAO : PadraoDAO<EmpresaViewModel>
+	{
 
-        public void Inserir(EmpresaViewModel empresa)
-        {
-            string sql =
-            "INSERT INTO Empresa (CNPJ, NomeDaEmpresa, Responsavel, TelefoneContato) " +
-            "VALUES (@cnpj, @nomedaempresa, @responsavel, @telefoneContato)";
-            HelperDAO.ExecutaSQL(sql, CriaParametros(empresa));
-        }
+		public void Inserir(EmpresaViewModel empresa)
+		{
+			HelperDAO.ExecutaProc("spInsert_Empresa", CriaParametros(empresa));
+		}
 
-        public void Alterar(EmpresaViewModel empresa)
-        {
-            string sql =
-            "UPDATE Empresa SET NomeDaEmpresa = @nomedaempresa, " +
-            "Responsavel = @responsavel, " +
-            "TelefoneContato = @telefoneContato " +
-            "WHERE CNPJ = @cnpj";
-            HelperDAO.ExecutaSQL(sql, CriaParametros(empresa));
-        }
 
-        private SqlParameter[] CriaParametros(EmpresaViewModel empresa)
-        {
-            SqlParameter[] parametros = new SqlParameter[4];
-            parametros[0] = new SqlParameter("cnpj", empresa.CNPJ);
-            parametros[1] = new SqlParameter("nomedaempresa", empresa.NomeDaEmpresa);
-            parametros[2] = new SqlParameter("responsavel", empresa.NomeDoResponsavel);
-            parametros[3] = new SqlParameter("telefoneContato", empresa.Telefone.ToString());
-            return parametros;
-        }
+		public void Alterar(EmpresaViewModel empresa)
+		{
+			HelperDAO.ExecutaProc("spUpdate_Empresa", CriaParametros(empresa));
+		}
 
-        public void Excluir(string cnpj)
-        {
-            string sql = "DELETE FROM Empresa WHERE CNPJ = @cnpj";
-            SqlParameter[] parametros = new SqlParameter[1];
-            parametros[0] = new SqlParameter("cnpj", cnpj);
-            HelperDAO.ExecutaSQL(sql, parametros);
-        }
+		protected override SqlParameter[] CriaParametros(EmpresaViewModel empresa)
+		{
+			SqlParameter[] parametros = new SqlParameter[5];
+			parametros[0] = new SqlParameter("cnpj", empresa.CNPJ);
+			parametros[1] = new SqlParameter("nomedaempresa", empresa.NomeDaEmpresa);
+			parametros[2] = new SqlParameter("responsavel", empresa.NomeDoResponsavel);
+			parametros[3] = new SqlParameter("telefoneContato", empresa.Telefone.ToString());
+			parametros[4] = new SqlParameter("id", empresa.Id);
 
-        private EmpresaViewModel MontaEmpresa(DataRow registro)
-        {
-            EmpresaViewModel e = new EmpresaViewModel();
-            e.CNPJ = registro["CNPJ"].ToString();
-            e.Telefone = registro["TelefoneContato"].ToString();
-            e.NomeDoResponsavel = registro["Responsavel"].ToString();
-            e.NomeDaEmpresa= registro["NomeDaEmpresa"].ToString();
-            return e;
-        }
 
-        public EmpresaViewModel Consulta(string cnpj)
-        {
-            string sql = "SELECT * from Empresa where CNPJ=@cnpj";
-            SqlParameter[] parametros = new SqlParameter[1];
-            parametros[0] = new SqlParameter("cnpj", cnpj);
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, parametros);
+			return parametros;
 
-            if (tabela.Rows.Count == 0)
-                return null;
-            else
-                return MontaEmpresa(tabela.Rows[0]);
-        }
+		}
 
-        public List<EmpresaViewModel> Listagem()
-        {
-            List<EmpresaViewModel> lista = new List<EmpresaViewModel>();
-            string sql = "SELECT * from Empresa";
-            DataTable tabela = HelperDAO.ExecutaSelect(sql, null);
+		public void Excluir(int id)
+		{
+			var p = new SqlParameter[]
+			{
+				 new SqlParameter("id", id),
+				 new SqlParameter("tabela", "Empresa")
+			};
 
-            foreach (DataRow registro in tabela.Rows)
-                lista.Add(MontaEmpresa(registro));
+			HelperDAO.ExecutaProc("spDelete", p);
+		}
 
-            return lista;
-        }
-    }
+		protected override EmpresaViewModel MontaModel(DataRow registro)
+		{
+			EmpresaViewModel e = new EmpresaViewModel();
+			e.Id = Convert.ToInt32(registro["id"]);
+			e.CNPJ = registro["CNPJ"].ToString();
+			e.Telefone = registro["TelefoneContato"].ToString();
+			e.NomeDoResponsavel = registro["Responsavel"].ToString();
+			e.NomeDaEmpresa = registro["NomeDaEmpresa"].ToString();
+			return e;
+		}
+
+		public EmpresaViewModel ConsultaCNPJ(string cnpj)
+		{
+			var p = new SqlParameter[]
+			{
+		new SqlParameter("cnpj", cnpj)
+			};
+
+			DataTable tabela = HelperDAO.ExecutaProcSelect("spConsultaCNPJ", p);
+
+			if (tabela.Rows.Count == 0)
+				return null;
+			else
+				return MontaModel(tabela.Rows[0]);
+		}
+
+		public List<EmpresaViewModel> Listagem()
+		{
+			List<EmpresaViewModel> lista = new List<EmpresaViewModel>();
+
+			DataTable tabela = HelperDAO.ExecutaProcSelect("spListagem", null);
+
+			foreach (DataRow registro in tabela.Rows)
+				lista.Add(MontaModel(registro));
+			return lista;
+		}
+
+		protected override void SetTabela()
+		{
+			Tabela = "Empresa";
+		}
+	}
 }

@@ -1,42 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\",
+  "WorkspaceRootPath": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\sensordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\dao\\sensordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\sensordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\controllers\\padraocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\padraocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\controllers\\sensorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\sensorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\usuario\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\views\\sensor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\sensor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\views\\sensor\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\sensor\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\models\\padraoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\padraoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\models\\sensorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\sensorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\dao\\padraodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\padraodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\views\\usuario\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\usuario\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\dao\\tiposensordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\tiposensordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\dao\\empresadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\empresadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main - copia\\pbl-part-1-main\\pbl_lp\\models\\tiposensorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\tiposensorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +78,212 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SensorDAO.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\SensorDAO.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\SensorDAO.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\SensorDAO.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\SensorDAO.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAADwv0sAAACdAAAA",
+              "DocumentIndex": 1,
+              "Title": "PadraoController.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\PadraoController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\PadraoController.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\PadraoController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\PadraoController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAtwHMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T19:29:52.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T18:28:59.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PadraoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\PadraoViewModel.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Models\\PadraoViewModel.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\PadraoViewModel.cs",
+              "RelativeToolTip": "PBL_LP\\Models\\PadraoViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T23:21:07.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "form.cshtml",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Sensor\\form.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Sensor\\form.cshtml",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Sensor\\form.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Sensor\\form.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T22:20:55.738Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Usuario\\Form.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Usuario\\Form.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Usuario\\Form.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Usuario\\Form.cshtml",
-              "ViewState": "AQIAABwAAAAAAAAAAAAWwDUAAAAQAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Sensor\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Sensor\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Sensor\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Sensor\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T17:36:25.854Z",
+              "WhenOpened": "2024-11-23T22:22:36.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SensorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\SensorViewModel.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Models\\SensorViewModel.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\SensorViewModel.cs",
+              "RelativeToolTip": "PBL_LP\\Models\\SensorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T22:20:06.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SensorDAO.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\SensorDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\SensorDAO.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\SensorDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\SensorDAO.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAtwEoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T22:16:08.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAAC4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T17:36:25.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T17:36:22.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Models\\UsuarioViewModel.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Models\\UsuarioViewModel.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Models\\UsuarioViewModel.cs",
-              "RelativeToolTip": "PBL_LP\\Models\\UsuarioViewModel.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBQAAAAfAAAA",
+              "Title": "SensorController.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\SensorController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\SensorController.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\SensorController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\SensorController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAtwC4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:36:15.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T18:16:54.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Empresa\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Empresa\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Empresa\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Empresa\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T20:37:21.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TipoSensorDAO.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\TipoSensorDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\TipoSensorDAO.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\TipoSensorDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\TipoSensorDAO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T22:04:46.384Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ConexaoBD.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\ConexaoBD.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\ConexaoBD.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\ConexaoBD.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\ConexaoBD.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
+              "Title": "PadraoDAO.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\PadraoDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\PadraoDAO.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\PadraoDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\PadraoDAO.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAASwD4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:29:50.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T20:21:21.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T18:36:53.681Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T20:20:19.389Z"
+              "Title": "Form.cshtml",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Usuario\\Form.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T23:01:32.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioDAO.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\UsuarioDAO.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\UsuarioDAO.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\UsuarioDAO.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\UsuarioDAO.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAkwEEAAAA0AAAA",
+              "DocumentIndex": 13,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\EmpresaController.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\EmpresaController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\EmpresaController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:33:29.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T18:14:11.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmpresaDAO.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\EmpresaDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\EmpresaDAO.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\EmpresaDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\EmpresaDAO.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAtwDkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T18:18:41.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\UsuarioDAO.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\DAO\\UsuarioDAO.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\UsuarioDAO.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAtwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T20:01:44.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T18:10:54.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Models\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\UsuarioViewModel.cs",
+              "RelativeToolTip": "PBL_LP\\Models\\UsuarioViewModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T20:01:28.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TipoSensorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\TipoSensorViewModel.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Models\\TipoSensorViewModel.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main - Copia\\PBL-Part-1-main\\PBL_LP\\Models\\TipoSensorViewModel.cs",
+              "RelativeToolTip": "PBL_LP\\Models\\TipoSensorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T18:16:46.546Z"
             }
           ]
         }

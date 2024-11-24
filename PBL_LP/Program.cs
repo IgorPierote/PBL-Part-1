@@ -47,6 +47,8 @@ namespace PBL_LP
                 pattern: "{controller=Login}/{action=Index}/{id?}");
 
             app.Run();
+
+            
         }
     }
 }

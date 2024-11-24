@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PBL_LP.Models
 {
-    public class AluguelViewModel
+    public class AluguelViewModel:PadraoViewModel
     {
         [Required(ErrorMessage = "O Código do Aluguel é obrigatório")]
         [Display(Name = "Código do Aluguel")]

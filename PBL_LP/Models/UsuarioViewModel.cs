@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http; // Importante para IFormFile
 
 namespace PBL_LP.Models
 {
-    public class UsuarioViewModel
+    public class UsuarioViewModel: PadraoViewModel
     {
 		public int Id { get; set; }
         public string CPF { get; set; } 

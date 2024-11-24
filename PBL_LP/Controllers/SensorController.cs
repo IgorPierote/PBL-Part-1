@@ -3,20 +3,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using PBL_LP.DAO;
 using PBL_LP.Filters;
 using PBL_LP.Models;
+using System.Reflection;
 
 namespace PBL_LP.Controllers
 {
-    [ServiceFilter(typeof(AutorizacaoFilter))]
-    public class SensorController : Controller
+
+    public class SensorController : PadraoController<SensorViewModel>
     {
-        public IActionResult Index()
+        public SensorController()
         {
-            SensorDAO dao = new SensorDAO();
-            List<SensorViewModel> lista = dao.Listagem();
-            return View(lista);
+            DAO = new SensorDAO();
+            GeraProximoId = true;
         }
 
-        public IActionResult Create()
+        public override IActionResult Create()
         {
             PreparaTipoSensorJogosParaCombo();
             ViewBag.Operacao = "I";
@@ -24,80 +24,31 @@ namespace PBL_LP.Controllers
 
 
             SensorDAO dao = new SensorDAO();
-            sensor.Codigo = dao.ProximoId();
+            sensor.Id = dao.ProximoId();
 
             return View("Form", sensor);
         }
-        public IActionResult Salvar(SensorViewModel sensor, string Operacao)
+
+        public override IActionResult Save(SensorViewModel model, string Operacao)
         {
-            try
-            {
-                ValidaDados(sensor, Operacao);
-                if (ModelState.IsValid == false)
-                {
-                    ViewBag.Opeacao = Operacao;
-                    return View("Form", sensor);
-                }
-                else
-                {
-                    SensorDAO dao = new SensorDAO();
-                    if (Operacao == "I")
-                    {
-                        dao.Inserir(sensor);
-                    }
-                    else
-                    {
-                        dao.Alterar(sensor);
-                    }
-                    return RedirectToAction("index");
-                }
-            }
-            catch (Exception erro)
-            {
-                PreparaTipoSensorJogosParaCombo();
-                return View("Error", new ErrorViewModel(erro.ToString()));
-            }
+            PreparaTipoSensorJogosParaCombo();
+
+            return base.Save(model, Operacao);
         }
 
-        public IActionResult Edit(int id)
+        public override IActionResult Edit(int id)
         {
-            try
-            {
-                PreparaTipoSensorJogosParaCombo();
-                ViewBag.Operacao = "A";
-                SensorDAO dao = new SensorDAO();
-                SensorViewModel sensor = dao.Consulta(id);
-                if (sensor == null)
-                    return RedirectToAction("index");
-                else
-                    return View("Form", sensor);
-            }
-            catch (Exception erro)
-            {
-                return View("Error", new ErrorViewModel(erro.ToString()));
-            }
+            PreparaTipoSensorJogosParaCombo();
+
+            return base.Edit(id);
         }
 
-        public IActionResult Delete(int id)
-        {
-            try
-            {
-                SensorDAO dao = new SensorDAO();
-                dao.Excluir(id);
-                return RedirectToAction("index");
-            }
-            catch (Exception erro)
-            {
-                return View("Error", new ErrorViewModel(erro.ToString()));
-            }
-        }
-
-        private void ValidaDados(SensorViewModel sensor, string operacao)
+        protected override void ValidaDados(SensorViewModel sensor, string operacao)
         {
             ModelState.Clear(); // limpa os erros criados automaticamente pelo Asp.net (que podem estar com msg em inglês)
             SensorDAO dao = new SensorDAO();
-            if (sensor.Codigo <= 0)
-                ModelState.AddModelError("Codigo", "Código inválido!");
+            if (sensor.Id <= 0)
+                ModelState.AddModelError("id", "Id inválido!!!");
             if (string.IsNullOrEmpty(sensor.Nome))
                 ModelState.AddModelError("Nome", "Preencha o nome.");
             if (sensor.ValorDoAluguel < 0)
@@ -121,5 +72,5 @@ namespace PBL_LP.Controllers
             ViewBag.Tipos = listaCategorias;
         }
     }
-    }
+}
 

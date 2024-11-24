@@ -1,6 +1,6 @@
 ﻿namespace PBL_LP.Models
 {
-    public class EmpresaViewModel
+    public class EmpresaViewModel:PadraoViewModel
     {
         public string Telefone {  get; set; }
 

@@ -3,18 +3,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h2><span class="moving">Cadastro de Sensor</span></h2>
-<form action="Salvar" method="post">
+<form action="Save" method="post">
     <input type="hidden" name="Operacao" value="@ViewBag.Operacao" />
-    <label for="Codigo" class="control-label">Código</label>
+    <<label for="Id" class="control-label">Id</label>
     @if (ViewBag.Operacao == "I")
     {
-        <input type="number" name="Codigo" value="@Model.Codigo" class="form-control" />
+        <input type="number" name="id" value="@Model.Id" class="form-control" />
     }
     else
     {
-        <input type="number" name="Codigo" value="@Model.Codigo" class="form-control disabled" readonly />
+        <input type="number" name="id" value="@Model.Id" class="form-control disabled" readonly />
     }
-    <span asp-validation-for="Codigo" class="text-danger"></span>
+    <span asp-validation-for="Id" class="text-danger"></span>
     <br />
 
     <div class="caixa_texto">

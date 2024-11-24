@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h2><span class="moving">Cadastro de Empresa</span></h2>
-<form action="Salvar" method="post">
+<<form asp-action="Save" method="post">
     <input type="hidden" name="Operacao" value="@ViewBag.Operacao" />
     <label for="CNPJ" class="control-label">CNPJ</label>
     @if (ViewBag.Operacao == "I")

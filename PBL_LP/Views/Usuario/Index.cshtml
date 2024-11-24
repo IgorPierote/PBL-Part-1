@@ -38,8 +38,8 @@
                 <td>@Html.DisplayFor(modelItem => item.Telefone)</td>
                 <td>@Html.DisplayFor(modelItem => item.DataDeNascimento)</td>
                 <td>
-                    <a asp-action="Edit" asp-route-cpf="@item.CPF" class="btn btn-warning">Editar</a> |
-                    <a asp-action="Delete" asp-route-cpf="@item.CPF" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a>
                 </td>
             </tr>
         }
