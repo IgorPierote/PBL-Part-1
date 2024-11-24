@@ -268,3 +268,42 @@ C:\Users\guilh\Downloads\PBL-Part-1-main - Copia\PBL-Part-1-main\PBL_LP\obj\Debu
 C:\Users\guilh\Downloads\PBL-Part-1-main - Copia\PBL-Part-1-main\PBL_LP\obj\Debug\net6.0\PBL_LP.pdb
 C:\Users\guilh\Downloads\PBL-Part-1-main - Copia\PBL-Part-1-main\PBL_LP\obj\Debug\net6.0\PBL_LP.genruntimeconfig.cache
 C:\Users\guilh\Downloads\PBL-Part-1-main - Copia\PBL-Part-1-main\PBL_LP\obj\Debug\net6.0\ref\PBL_LP.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.csproj.AssemblyReference.cache
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.AssemblyInfoInputs.cache
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.AssemblyInfo.cs
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.csproj.CoreCompileInputs.cache
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.RazorAssemblyInfo.cache
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.RazorAssemblyInfo.cs
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.sourcelink.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\appsettings.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\PBL_LP.staticwebassets.runtime.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\PBL_LP.exe
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\PBL_LP.deps.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\PBL_LP.runtimeconfig.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\PBL_LP.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\PBL_LP.pdb
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\staticwebassets\msbuild.PBL_LP.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\staticwebassets\msbuild.build.PBL_LP.props
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PBL_LP.props
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PBL_LP.props
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\scopedcss\bundle\PBL_LP.styles.css
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\scopedcss\projectbundle\PBL_LP.bundle.scp.css
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.csproj.Up2Date
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\refint\PBL_LP.dll
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.pdb
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\PBL_LP.genruntimeconfig.cache
+C:\Users\Piero\Desktop\Workspace\Codes\C#\PBL-Part-1\PBL_LP\obj\Debug\net6.0\ref\PBL_LP.dll

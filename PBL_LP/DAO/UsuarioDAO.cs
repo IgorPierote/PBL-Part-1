@@ -1,18 +1,66 @@
 ﻿using PBL_LP.Models;
 using System.Data.SqlClient;
 using System.Data;
-using System.IO;
-using System.Reflection;
+using System.Collections.Generic;
 
 namespace PBL_LP.DAO
 {
     public class UsuarioDAO : PadraoDAO<UsuarioViewModel>
     {
-        public void Inserir(UsuarioViewModel usuario)
+        public List<UsuarioViewModel> FiltrarUsuarios(string cpfInicio, string nome, string telefone, DateTime? dataNascimento)
         {
-            HelperDAO.ExecutaProc("spInsert_Usuario", CriaParametros(usuario));
+            List<UsuarioViewModel> lista = new List<UsuarioViewModel>();
+
+            string sql = "SELECT * FROM Usuario WHERE 1=1";
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            if (!string.IsNullOrEmpty(cpfInicio))
+            {
+                sql += " AND CPF LIKE @cpfInicio + '%'";
+                parametros.Add(new SqlParameter("cpfInicio", cpfInicio));
+            }
+
+            if (!string.IsNullOrEmpty(nome))
+            {
+                sql += " AND Nome LIKE '%' + @nome + '%'";
+                parametros.Add(new SqlParameter("nome", nome));
+            }
+
+            if (!string.IsNullOrEmpty(telefone))
+            {
+                sql += " AND Telefone LIKE '%' + @telefone + '%'";
+                parametros.Add(new SqlParameter("telefone", telefone));
+            }
+
+            if (dataNascimento.HasValue)
+            {
+                sql += " AND DataDeNascimento = @dataNascimento";
+                parametros.Add(new SqlParameter("dataNascimento", dataNascimento.Value));
+            }
+
+            DataTable tabela = HelperDAO.ExecutaSelect(sql, parametros.ToArray());
+
+            foreach (DataRow registro in tabela.Rows)
+                lista.Add(MontaModel(registro));
+
+            return lista;
         }
 
+        public void Inserir(UsuarioViewModel usuario)
+        {
+            SqlParameter[] parametros = new SqlParameter[]
+            {
+                new SqlParameter("cpf", usuario.CPF),
+                new SqlParameter("Nome", usuario.Nome),
+                new SqlParameter("email", usuario.Email),
+                new SqlParameter("senha", usuario.Senha),
+                new SqlParameter("telefone", usuario.Telefone),
+                new SqlParameter("datadenascimento", usuario.DataDeNascimento),
+                new SqlParameter("fotoCaminho", usuario.ImagemEmByte != null ? (object)usuario.ImagemEmByte : DBNull.Value)
+            };
+
+            HelperDAO.ExecutaProc("spInsert_Usuario", parametros);
+        }
 
         public void Alterar(UsuarioViewModel usuario)
         {
@@ -21,9 +69,7 @@ namespace PBL_LP.DAO
 
         protected override SqlParameter[] CriaParametros(UsuarioViewModel usuario)
         {
-            object imgByte = usuario.ImagemEmByte;
-            if (imgByte == null)
-                imgByte = DBNull.Value;
+            object imgByte = usuario.ImagemEmByte != null ? (object)usuario.ImagemEmByte : DBNull.Value;
             SqlParameter[] parametros = new SqlParameter[8];
             parametros[0] = new SqlParameter("cpf", usuario.CPF);
             parametros[1] = new SqlParameter("Nome", usuario.Nome);
@@ -32,11 +78,10 @@ namespace PBL_LP.DAO
             parametros[4] = new SqlParameter("telefone", usuario.Telefone);
             parametros[5] = new SqlParameter("datadenascimento", usuario.DataDeNascimento);
             parametros[6] = new SqlParameter("fotoCaminho", imgByte);
-			parametros[7] = new SqlParameter("id", usuario.Id);
+            parametros[7] = new SqlParameter("id", usuario.Id);
 
-			return parametros;
+            return parametros;
         }
-
 
         public void Excluir(int id)
         {
@@ -64,7 +109,6 @@ namespace PBL_LP.DAO
             };
             return u;
         }
-
 
         public UsuarioViewModel Consulta(int id)
         {
@@ -122,6 +166,4 @@ namespace PBL_LP.DAO
             Tabela = "Usuario";
         }
     }
-
-
 }

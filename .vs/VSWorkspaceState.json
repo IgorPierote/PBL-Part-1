@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PBL_LP\\bin"
+    "\\PBL_LP",
+    "\\PBL_LP\\bin",
+    "\\PBL_LP\\DAO"
   ],
-  "SelectedNode": "\\PBL_LP",
+  "SelectedNode": "\\PBL_LP\\DAO\\SensorDAO.cs",
   "PreviewInSolutionExplorer": false
 }

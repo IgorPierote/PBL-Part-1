@@ -1,0 +1,30 @@
+﻿<fieldset id="areaFiltro" class="form-group">
+    <legend>Consulta Avançada de Usuários</legend>
+    <div class="row">
+        <div class="col-lg-4">
+            CPF<br />
+            <input type="text" id="cpfFilter" class="form-control" />
+        </div>
+        <div class="col-lg-4">
+            Nome<br />
+            <input type="text" id="nomeFilter" class="form-control" />
+        </div>
+        <div class="col-lg-4">
+            Data de Nascimento<br />
+            <input type="date" id="dataNascimentoFilter" class="form-control" />
+        </div>
+        <div class="col-lg-12">
+            <br />
+            <input type="button" id="btnFiltro" class="btn btn-success" value="Aplicar" onclick="aplicaFiltroConsultaAvancada()" />
+        </div>
+    </div>
+</fieldset>
+
+<div id="resultadoConsulta" class="table-responsive">
+    <!-- Resultados da consulta serão inseridos aqui -->
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/site.js"></script>
+}
