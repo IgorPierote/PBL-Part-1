@@ -1,163 +1,116 @@
 CREATE DATABASE PBL;
-
-USE [PBL]
-GO
-/****** Object:  Table [dbo].[Aluguel]    Script Date: 27/09/2024 14:01:05 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
 GO
 
+USE [PBL];
+GO
+
+-- Criação da tabela Aluguel com IDENTITY para auto-incremento
 CREATE TABLE [dbo].[Aluguel](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[idEmpresa] [int] NOT NULL,
-	[Quantidade] [int] NOT NULL,
-	[DataDeInicio] [date] NOT NULL,
-	[DataDeFinalizacao] [date] NOT NULL,
-	[Preco] [decimal](10, 2) NOT NULL,
-	[CodigoSensor] [int] NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	id ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+    [id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,
+    [idEmpresa] [int] NOT NULL,
+    [Quantidade] [int] NOT NULL,
+    [DataDeInicio] [date] NOT NULL,
+    [DataDeFinalizacao] [date] NOT NULL,
+    [Preco] [decimal](10, 2) NOT NULL,
+    [CodigoSensor] [int] NOT NULL
+);
 GO
-/****** Object:  Table [dbo].[Empresa]    Script Date: 27/09/2024 14:01:05 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
+-- Criação da tabela Empresa com IDENTITY para auto-incremento
 CREATE TABLE [dbo].[Empresa](
-    [id] [int] IDENTITY(1,1) NOT NULL,
-	[CNPJ] [varchar](20) UNIQUE NOT NULL,
-	[NomeDaEmpresa] [varchar](100) NOT NULL,
-	[Responsavel] [varchar](100) NOT NULL,
-	[TelefoneContato] [varchar](15) NULL,
- CONSTRAINT [PK_EMPRESA] PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+    [id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,
+    [CNPJ] [varchar](20) UNIQUE NOT NULL,
+    [NomeDaEmpresa] [varchar](100) NOT NULL,
+    [Responsavel] [varchar](100) NOT NULL,
+    [TelefoneContato] [varchar](15) NULL
+);
 GO
-/****** Object:  Table [dbo].[Sensor]    Script Date: 27/09/2024 14:01:05 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
+-- Criação da tabela Sensor com IDENTITY para auto-incremento
 CREATE TABLE [dbo].[Sensor](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[Nome] [varchar](100) NOT NULL,
-	[ValorDoAluguel] [decimal](10, 2) NOT NULL,
-	[Tipo] [int] NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+    [id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,
+    [Nome] [varchar](100) NOT NULL,
+    [ValorDoAluguel] [decimal](10, 2) NOT NULL,
+    [Tipo] [int] NULL
+);
 GO
-/****** Object:  Table [dbo].[TipoSensor]    Script Date: 27/09/2024 14:01:05 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
+-- Criação da tabela TipoSensor com IDENTITY para auto-incremento
 CREATE TABLE [dbo].[TipoSensor](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[Descricao] [varchar](100) NOT NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-/****** Object:  Table [dbo].[Usuario]    Script Date: 27/09/2024 14:01:05 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
+    [id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,
+    [Descricao] [varchar](100) NOT NULL
+);
 GO
 
-create TABLE [dbo].[Usuario](
-    [id] [int] IDENTITY(1,1) NOT NULL,
-	[CPF] [varchar](11) UNIQUE NOT NULL,
-	[Nome] [varchar](100) NOT NULL,
-	[Email] [varchar](100) NOT NULL,
-	[Senha] [varchar](50) NOT NULL,
-	[Telefone] [varchar](15) NOT NULL,
-	[DataDeNascimento] [date] NOT NULL,
-        [fotoCaminho] [varbinary] (max)
-PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+-- Criação da tabela Usuario com IDENTITY para auto-incremento
+CREATE TABLE [dbo].[Usuario](
+    [id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,
+    [CPF] [varchar](11) UNIQUE NOT NULL,
+    [Nome] [varchar](100) NOT NULL,
+    [Email] [varchar](100) NOT NULL,
+    [Senha] [varchar](50) NOT NULL,
+    [Telefone] [varchar](15) NOT NULL,
+    [DataDeNascimento] [date] NOT NULL,
+    [fotoCaminho] [varbinary](max)
+);
 GO
-ALTER TABLE [dbo].[Aluguel]  WITH CHECK ADD FOREIGN KEY([CodigoSensor])
-REFERENCES [dbo].[Sensor] ([id])
+
+-- Adicionando Foreign Keys
+ALTER TABLE [dbo].[Aluguel] 
+ADD FOREIGN KEY([CodigoSensor]) REFERENCES [dbo].[Sensor]([id]);
 GO
-ALTER TABLE [dbo].[Aluguel]  WITH CHECK ADD  CONSTRAINT [FK_CNPJ_EMPRESA] FOREIGN KEY([IdEmpresa])
-REFERENCES [dbo].[Empresa] ([id])
-GO
-ALTER TABLE [dbo].[Aluguel] CHECK CONSTRAINT [FK_CNPJ_EMPRESA]
+
+ALTER TABLE [dbo].[Aluguel] 
+ADD CONSTRAINT [FK_CNPJ_EMPRESA] FOREIGN KEY([idEmpresa]) REFERENCES [dbo].[Empresa]([id]);
 GO
 
 ALTER TABLE [dbo].[Sensor] 
-WITH CHECK ADD CONSTRAINT [FK_Sensor_TipoSensor] 
-FOREIGN KEY ([Tipo])
-REFERENCES [dbo].[TipoSensor] ([id]);
+ADD CONSTRAINT [FK_Sensor_TipoSensor] FOREIGN KEY ([Tipo]) REFERENCES [dbo].[TipoSensor]([id]);
 GO
 
-ALTER TABLE [dbo].[Sensor] 
-CHECK CONSTRAINT [FK_Sensor_TipoSensor];
+-- Criação das stored procedures
+
+CREATE PROCEDURE spDelete
+    @id int,
+    @tabela varchar(max)
+AS
+BEGIN
+    DECLARE @sql varchar(max);
+    SET @sql = 'DELETE FROM ' + @tabela + ' WHERE id = ' + CAST(@id AS varchar(max));
+    EXEC(@sql);
+END;
 GO
 
---Cria��o das stored procedures
-
-create procedure spDelete
-(
-@id int ,
-@tabela varchar(max)
-)
-as
-begin
-declare @sql varchar(max);
-set @sql = ' delete ' + @tabela +
-' where id = ' + cast(@id as varchar(max))
-exec(@sql)
-end
+CREATE PROCEDURE spConsulta
+    @id int,
+    @tabela varchar(max)
+AS
+BEGIN
+    DECLARE @sql varchar(max);
+    SET @sql = 'SELECT * FROM ' + @tabela + ' WHERE id = ' + CAST(@id AS varchar(max));
+    EXEC(@sql);
+END;
 GO
 
-create procedure spConsulta
-(
-@id int ,
-@tabela varchar(max)
-)
-as
-begin
-declare @sql varchar(max);
-set @sql = 'select * from ' + @tabela +
-' where id = ' + cast(@id as varchar(max))
-exec(@sql)
-end
+CREATE PROCEDURE spConsultaCNPJ
+    @cnpj NVARCHAR(18)
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT * FROM Empresa WHERE CNPJ = @cnpj;
+END;
 GO
 
-create procedure spListagem
-(
-@tabela varchar(max),
-@ordem varchar(max))
-as
-begin
-exec('select * from ' + @tabela +
-' order by ' + @ordem)
-end
+CREATE PROCEDURE spListagem
+    @tabela varchar(max),
+    @ordem varchar(max)
+AS
+BEGIN
+    EXEC('SELECT * FROM ' + @tabela + ' ORDER BY ' + @ordem);
+END;
 GO
 
-create procedure spProximoId
-(@tabela varchar(max))
-as
-begin
-exec('select isnull(max(id) +1, 1) as MAIOR from '
-+@tabela)
-end
-GO
+-- Ajuste: Remover spProximoId se o ID é gerado automaticamente
 
 CREATE PROCEDURE spInsert_Aluguel
     @idEmpresa INT,
@@ -171,7 +124,7 @@ BEGIN
     INSERT INTO Aluguel (idEmpresa, Quantidade, DataDeInicio, DataDeFinalizacao, Preco, CodigoSensor)
     VALUES (@idEmpresa, @Quantidade, @DataDeInicio, @DataDeFinalizacao, @Preco, @CodigoSensor);
 END;
-
+GO
 
 CREATE PROCEDURE spUpdate_Aluguel
     @id int,
@@ -204,7 +157,7 @@ BEGIN
     INSERT INTO Empresa (CNPJ, NomeDaEmpresa, Responsavel, TelefoneContato)
     VALUES (@CNPJ, @NomeDaEmpresa, @Responsavel, @TelefoneContato);
 END;
-
+GO
 
 CREATE PROCEDURE spUpdate_Empresa
     @id INT,
@@ -232,7 +185,6 @@ BEGIN
     INSERT INTO Sensor (Nome, ValorDoAluguel, Tipo)
     VALUES (@Nome, @ValorDoAluguel, @Tipo);
 END;
-
 GO
 
 CREATE PROCEDURE spUpdate_Sensor
@@ -260,8 +212,8 @@ END;
 GO
 
 CREATE PROCEDURE spUpdate_TipoSensor
-    @Descricao VARCHAR(100),
-	@id int
+    @id int,
+    @Descricao VARCHAR(100)
 AS
 BEGIN
     UPDATE TipoSensor
@@ -277,13 +229,12 @@ CREATE PROCEDURE spInsert_Usuario
     @Senha VARCHAR(50),
     @Telefone VARCHAR(15),
     @DataDeNascimento DATE,
-    @fotoCaminho VARBINARY
+    @fotoCaminho VARBINARY(max)
 AS
 BEGIN
     INSERT INTO Usuario (CPF, Nome, Email, Senha, Telefone, DataDeNascimento, fotoCaminho)
     VALUES (@CPF, @Nome, @Email, @Senha, @Telefone, @DataDeNascimento, @fotoCaminho);
 END;
-
 GO
 
 CREATE PROCEDURE spUpdate_Usuario
@@ -294,7 +245,7 @@ CREATE PROCEDURE spUpdate_Usuario
     @Senha VARCHAR(50),
     @Telefone VARCHAR(15),
     @DataDeNascimento DATE,
-    @fotoCaminho VARBINARY 
+    @fotoCaminho VARBINARY(max)
 AS
 BEGIN
     UPDATE Usuario
@@ -309,4 +260,29 @@ BEGIN
 END;
 GO
 
-select * from Usuario
+CREATE PROCEDURE Sp_ConsultaSensor
+AS
+BEGIN
+    SELECT 
+        Sensor.id,
+        Sensor.ValorDoAluguel,
+        Sensor.Nome,
+        TipoSensor.Descricao,
+        Sensor.Tipo
+    FROM 
+        Sensor 
+    INNER JOIN 
+        TipoSensor ON Sensor.Tipo = TipoSensor.id;
+END;
+GO
+
+-- Insere exemplos de dados
+INSERT INTO TipoSensor(Descricao) VALUES ('Temperatura');
+INSERT INTO TipoSensor(Descricao) VALUES ('Luz');
+GO
+
+-- Consultas para verificar os dados
+SELECT * FROM Usuario;
+SELECT * FROM Empresa;
+SELECT * FROM TipoSensor;
+GO
