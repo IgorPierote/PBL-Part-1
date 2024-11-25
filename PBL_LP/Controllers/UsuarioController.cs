@@ -5,10 +5,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations; // Para EmailAddressAttribute
 using PBL_LP.DAO;
+using PBL_LP.Filters;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PBL_LP.Controllers
 {
-    [Route("Usuario")]
+	[ServiceFilter(typeof(AutorizacaoFilter))]
+	[Route("Usuario")]
     public class UsuarioController : PadraoController<UsuarioViewModel>
     {
         public UsuarioController()
@@ -37,7 +40,8 @@ namespace PBL_LP.Controllers
         }
 
         [HttpGet]
-        [Route("Create")]
+		[AllowAnonymous]
+		[Route("Create")]
         public IActionResult Create()
         {
             ViewBag.Operacao = "I"; // Indica operação de inserção
@@ -45,7 +49,8 @@ namespace PBL_LP.Controllers
         }
 
         [HttpPost]
-        [Route("Create")]
+		[AllowAnonymous]
+		[Route("Create")]
         public IActionResult Create(UsuarioViewModel model)
         {
             ValidaDados(model, "I");

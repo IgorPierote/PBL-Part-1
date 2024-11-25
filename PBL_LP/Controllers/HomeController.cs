@@ -50,15 +50,10 @@ namespace PBL_LP.Controllers
             return RedirectToAction("Index", "Sobre");
         }
 
-        public IActionResult Dashboard1()
+        public IActionResult Temperature()
         {
-            return RedirectToAction("Index", "Dashboard1");
-        }
-
-        public IActionResult Dashboard2()
-        {
-            return RedirectToAction("Index", "Dashboard2");
-        }
+			return RedirectToAction("Index", "Temperature");
+		}
 
         public IActionResult Login()
         {

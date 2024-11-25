@@ -1,0 +1,119 @@
+﻿@model TemperatureGraphViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temperature Data</title>
+
+	<!-- Adiciona o Plotly.js -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+	<!-- Adiciona o jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="css/StyleSheetGraphic.css">
+
+</head>
+<body>
+	<h1>Temperature Data</h1>
+
+	<div class="conteudo">
+		<!-- Seção do Gráfico -->
+		<div class="graph-section">
+		</div>
+
+		<div class="right-section">
+			<!-- Seção dos Cards -->
+			<div class="cards-section">
+				<div class="column">
+					<!-- Card para a Temperatura Média -->
+					<div class="card">
+						<h3>Average Temperature</h3>
+						<p id="avgTemperature">@Model.AverageTemperature °C</p>
+					</div>
+
+					<!-- Card para a Temperatura Mais Recente -->
+					<div class="card">
+						<h3>Current Temperature</h3>
+						<p id="lastTemperature">@Model.LastTemperature °C</p>
+					</div>
+
+					<div class="card">
+						<h3>Erro</h3>
+						<p id="erro">-- °C</p>
+					</div>
+				</div>
+				<!-- Coluna 2 -->
+				<div class="column">
+					<div class="card">
+						<h3>Max Temperature</h3>
+						<p id="max_temperature">0 °C</p>
+					</div>
+
+					<div class="card">
+						<h3>Min Temperature</h3>
+						<p id="min_temperature">0 °C</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="input-dados">
+				<label for="Trigger" class="control-label">Trigger</label>
+				<input type="number" name="Trigger" value="0.0" />
+				<label for="Set Point" class="control-label">Set Point</label>
+				<input type="number" name="SetPoint" value="0.0" />
+				<button class="btn" id="startMeasurementButton">Iniciar medida</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		$(document).ready(function () {
+			// Função que será chamada quando o botão for clicado
+			$('#startMeasurementButton').on('click', function () {
+				const $button = $(this); // Referência ao botão
+				const $input = $('input[name="SetPoint"]'); // Referência ao campo de entrada
+				const $trigger = $('input[name="Trigger"]');
+
+				// Alterna o estado do botão
+				if ($button.text() === 'Iniciar medida') {
+					// Estado: Iniciar
+					$button.text('Parar'); // Muda o texto do botão
+					$button.css('background-color', 'red'); // Muda a cor para vermelho
+					$input.prop('readonly', true); // Torna o input somente leitura
+					$trigger.prop('readonly', true);
+					$('input[name="SetPoint"]').css('background-color', '#D3D3D3');
+					$('input[name="Trigger"]').css('background-color', '#D3D3D3');
+
+					var setPointValue = document.querySelector('[name="SetPoint"]').value;
+					var linkSetPoint = 'temperature/RenderGraficoTemperatura?setPoint=' + setPointValue;
+
+					// Requisição AJAX para RenderGraficoTemperatura
+					$.ajax({
+						url: linkSetPoint,  // Passando o setPoint como query string
+						type: 'GET',
+						success: function (data) {
+							// Quando a requisição for bem-sucedida, insere a partial view renderizada na div
+							$('.graph-section').html(data);
+						},
+						error: function (xhr, status, error) {
+							console.error('Erro ao carregar a partial view: ' + error);
+						}
+					});
+				} else {
+					// Estado: Parar
+					$button.text('Iniciar medida'); // Muda o texto de volta
+					$button.css('background-color', '#4CAF50'); // Volta à cor original (verde)
+					$input.prop('readonly', false); // Torna o input editável
+					$trigger.prop('readonly', false);
+					$('input[name="SetPoint"]').css('background-color', 'white');
+					$('input[name="Trigger"]').css('background-color', 'white');
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>

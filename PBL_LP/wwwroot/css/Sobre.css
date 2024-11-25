@@ -1,0 +1,68 @@
+﻿/* Define o estilo para a página de sobre */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centraliza o título e o texto */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* Alinha os parágrafos com o texto */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Estiliza a div que contém as informações dos desenvolvedores */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+    /* Cada desenvolvedor será apresentado em um bloco com a foto e nome */
+    .container img {
+        width: 150px; /* Tamanho fixo para as imagens */
+        height: 150px;
+        object-fit: cover; /* Para garantir que a imagem fique bem ajustada */
+        border-radius: 50%; /* Torna as imagens circulares */
+        border: 2px solid #ccc; /* Adiciona uma borda sutil */
+    }
+
+    /* Estilo para o texto de cada desenvolvedor */
+    .container p {
+        text-align: center;
+        width: 100%; /* Faz o texto ocupar toda a largura do item */
+        margin-top: 5px;
+        color: #333;
+    }
+
+        /* Adiciona uma margem inferior nos parágrafos */
+        .container p:last-child {
+            margin-bottom: 40px;
+        }
+
+/* Ajusta a responsividade das imagens e do layout para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Coloca os itens em uma coluna em vez de linha */
+        gap: 15px;
+    }
+
+        .container img {
+            width: 120px;
+            height: 120px;
+        }
+}

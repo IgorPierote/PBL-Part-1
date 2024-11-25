@@ -1,0 +1,88 @@
+﻿/* Estilo global para a página */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Ajustando o layout do corpo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #f4f7fc; /* Cor de fundo para a página */
+}
+
+/* O conteúdo principal vai ocupar o espaço disponível */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 50px; /* Garantir que o conteúdo não sobreponha o footer */
+}
+
+/* Estilo para o formulário de usuário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Garantir que o conteúdo não se sobreponha ao restante da página */
+}
+
+/* Estilos para os campos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Estilo do preview da imagem */
+#imgPreview {
+    margin-top: 10px;
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de submit */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+/* Ajustando a exibição da foto do perfil */
+input[type="file"] {
+    display: inline-block;
+}
+
+img.img-responsive {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Quando a página tiver a classe 'usuario-form-page', esconda o footer */
+/* Esconde o footer quando estiver no formulário de cadastro de usuário */
+footer {
+    display: none;
+}

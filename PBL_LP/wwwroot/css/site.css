@@ -1,3 +1,144 @@
-.nav-link text-dark{
-    font-weight:500;
+/* Aplicando a fonte global */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .navbar .nav-link {
+        font-weight: 600;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+        .navbar .nav-link:hover {
+            color: #0056b3;
+            background-color: #f1f1f1; /* Cor de fundo quando o hover é ativado */
+            border-radius: 5px;
+        }
+
+/* Efeito de hover sobre o link da navbar */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+    .navbar-brand:hover {
+        color: #0056b3;
+    }
+
+/* Ajustes gerais */
+.welcome-message {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.main-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Botões */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+        cursor: pointer;
+    }
+
+/* Rodapé */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+/* Aplicando a fonte global */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .navbar .nav-link {
+        font-weight: 600;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+        .navbar .nav-link:hover {
+            color: #0056b3;
+            background-color: #f1f1f1; /* Cor de fundo quando o hover é ativado */
+            border-radius: 5px;
+        }
+
+/* Efeito de hover sobre o link da navbar */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+    .navbar-brand:hover {
+        color: #0056b3;
+    }
+
+/* Ajustes gerais */
+.welcome-message {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.main-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Botões */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+        cursor: pointer;
+    }
+
+/* Rodapé */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
 }

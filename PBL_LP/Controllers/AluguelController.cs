@@ -16,6 +16,13 @@ namespace PBL_LP.Controllers
             GeraProximoId = true;
         }
 
+        protected override void PreencheDadosParaView(string operacao, AluguelViewModel model)
+        {
+            base.PreencheDadosParaView(operacao, model); // Mantém a lógica base
+            PreparaListaCNPJParaCombo(); // Prepara a lista de empresas
+            PreparaListaSensoresParaCombo(); // Prepara a lista de sensores
+        }
+
         private void PreparaListaCNPJParaCombo()
         {
             CNPJDAO categoria = new CNPJDAO();

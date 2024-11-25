@@ -30,6 +30,8 @@ namespace PBL_LP.DAO
             return parametros;
         }
 
+
+
         public void Excluir(int id)
         {
             var p = new SqlParameter[]

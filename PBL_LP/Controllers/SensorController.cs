@@ -7,8 +7,8 @@ using System.Reflection;
 
 namespace PBL_LP.Controllers
 {
-
-    public class SensorController : PadraoController<SensorViewModel>
+	[ServiceFilter(typeof(AutorizacaoFilter))]
+	public class SensorController : PadraoController<SensorViewModel>
     {
         public SensorController()
         {

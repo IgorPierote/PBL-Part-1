@@ -18,12 +18,16 @@
         <div class="form-group">
             <input type="text" id="telefoneFilter" name="telefoneFilter" class="form-control" placeholder="Telefone" value="@ViewBag.TelefoneFilter" />
         </div>
-        <div class="form-group">
+        <div class="form-group input-data-nascimento">
             <input type="date" id="dataNascimentoFilter" name="dataNascimentoFilter" class="form-control" value="@ViewBag.DataNascimentoFilter" />
         </div>
-        <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
-            <button type="button" id="clearButton" class="btn btn-primary" style="color: white;">Limpar Filtro</button>
-            <a asp-action="Create" class="btn btn-primary" style="color: white;">Novo Usuário</a>
+        <div class="button-container">
+            <div class="form-group">
+                <button type="button" id="clearButton" class="btn btn-primary">Limpar Filtro</button>
+            </div>
+            <div class="form-group">
+                <a asp-action="Create" class="btn btn-secondary">Novo Usuário</a>
+            </div>
         </div>
     </form>
 </div>

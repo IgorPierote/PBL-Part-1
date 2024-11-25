@@ -1,0 +1,141 @@
+﻿/* Estilo global para a página de Lista de Usuários */
+body {
+    background-color: #f4f8fc;
+    font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+h2.moving {
+    text-align: center;
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário de filtros */
+#filterForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between; /* Alinha os elementos com espaço entre eles */
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    /* Campos de entrada */
+    #filterForm .form-group {
+        flex: 1; /* Ajusta a largura dos campos */
+        min-width: 200px; /* Largura mínima para campos de texto */
+    }
+
+    #filterForm input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+.input-data-nascimento {
+    margin-top: -10px; /* Move a barra de data de nascimento 10px para cima */
+}
+
+/* Container para alinhar os botões */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Botões nas extremidades */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    width: 100%; /* Garante que os botões ocupem toda a largura disponível */
+}
+
+    /* Estilo dos botões para manter o mesmo tamanho */
+    .button-container .form-group button,
+    .button-container .form-group a {
+        width: 150px; /* Mesma largura */
+        padding: 10px; /* Ajuste interno */
+        font-size: 1rem;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center; /* Garante que o conteúdo do botão fique alinhado verticalmente */
+        justify-content: center; /* Centraliza o texto dentro do botão */
+    }
+
+    /* Estilo específico para os botões "Limpar Filtro" e "Novo Usuário" */
+    #clearButton, .button-container .form-group a {
+        background-color: #007bff; /* Azul padrão para ambos */
+    }
+
+        #clearButton:hover, .button-container .form-group a:hover {
+            background-color: #0056b3; /* Azul mais escuro no hover */
+        }
+    .button-container .form-group a {
+        margin-top: -5px; /* Move o botão 10px para cima */
+    }
+
+
+#userList table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#userList th,
+#userList td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#userList th {
+    background-color: #007bff;
+    color: white;
+}
+
+#userList td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#userList .btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+
+#userList .btn-primary {
+    background-color: #007bff;
+}
+
+    #userList .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+#userList .btn-danger {
+    background-color: #dc3545;
+}
+
+    #userList .btn-danger:hover {
+        background-color: #a71d2a;
+    }

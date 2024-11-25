@@ -1,0 +1,74 @@
+﻿/* Estilização exclusiva para a página de login com gradiente */
+body.login-page {
+    background: linear-gradient(to bottom, #e3f2fd, #0d6efd); /* Gradiente suave do azul claro para azul escuro */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004085;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Garantir que o body não tenha espaçamento */
+}
+
+    /* Container do card de login */
+    body.login-page .login-card {
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px; /* Garantir que o card não fique muito largo */
+        padding: 30px; /* Espaçamento interno para o card */
+        box-sizing: border-box; /* Garantir que o padding não afete o layout */
+        text-align: center; /* Centralizar texto dentro do card */
+    }
+
+        /* Header do card de login */
+        body.login-page .login-card .card-header {
+            background: #0d6efd; /* Azul escuro */
+            color: #ffffff;
+            font-size: 1.75rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        /* Estilização dos campos de entrada */
+        body.login-page .login-card input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        /* Estilização do botão de login */
+        body.login-page .login-card button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            body.login-page .login-card button:hover {
+                background-color: #004085; /* Cor mais escura ao passar o mouse */
+            }
+
+        /* Ajustes para links dentro do card */
+        body.login-page .login-card a {
+            color: #0d6efd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            body.login-page .login-card a:hover {
+                text-decoration: underline;
+            }

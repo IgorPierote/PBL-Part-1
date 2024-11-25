@@ -22,18 +22,21 @@
     <Content Remove="wwwroot\css\Empresa.css" />
     <Content Remove="wwwroot\css\Sensores.css" />
     <Content Remove="wwwroot\css\Sensorescss.cs" />
+    <Content Remove="wwwroot\css\UsuarioSensor.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\estilos.css" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Extension\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Temperature\Index.cshtml" />
+    <None Include="Views\Temperature\pvGraficoTemperatura.cshtml" />
   </ItemGroup>
 
 </Project>

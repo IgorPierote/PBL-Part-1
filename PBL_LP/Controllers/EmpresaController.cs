@@ -6,7 +6,10 @@ using System.Reflection;
 using PBL_LP.Controllers;
 using PBL_LP.DAO;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
+using PBL_LP.Filters;
 
+[ServiceFilter(typeof(AutorizacaoFilter))]
 public class EmpresaController : PadraoController<EmpresaViewModel>
 {
 

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj": {}
+    "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj": {
+    "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
+        "projectUniqueName": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
         "projectName": "PBL_LP",
-        "projectPath": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
-        "packagesPath": "C:\\Users\\Piero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Piero\\Desktop\\Workspace\\Codes\\C#\\PBL-Part-1\\PBL_LP\\obj\\",
+        "projectPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
+        "packagesPath": "C:\\Users\\guind\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\guind\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +49,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
@@ -62,24 +69,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }
