@@ -1,7 +1,5 @@
 # README
 
-## English Version
-
 ### Overview
 
 This project is an IoT application using an ESP32 microcontroller to connect to a Wi-Fi network and communicate with an MQTT broker. The application is designed to control an onboard LED and send temperature readings to the broker. The code is written in C++ and utilizes the WiFi and PubSubClient libraries for network and MQTT functionalities.
