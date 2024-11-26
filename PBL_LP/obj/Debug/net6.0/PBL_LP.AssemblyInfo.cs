@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PBL_LP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67940263238a7d50729d830d7b2c66c18717243d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e016c043fa875870e3a1f6a8cf626cf5ccd188a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PBL_LP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PBL_LP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

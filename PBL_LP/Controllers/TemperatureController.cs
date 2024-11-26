@@ -99,7 +99,7 @@ public class TemperatureController : Controller
 			}
 		}
 	}
-	public async Task<IActionResult> VerificarEstabilizacao(string temperaturasArray)
+	public IActionResult VerificarEstabilizacao(string temperaturasArray)
 	{
 		double[] temperaturas = temperaturasArray
 			.Split(',')

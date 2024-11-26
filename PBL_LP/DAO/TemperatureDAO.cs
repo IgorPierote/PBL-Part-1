@@ -105,7 +105,9 @@ public class TemperatureDAO
 	// Método para obter os dados de temperatura
 	public async Task<List<TemperatureViewModel>> GetTemperatureDataAsync()
 	{
-		var response = await _httpClient.GetAsync(_apiUrl);
+        string formattedDate = DateTime.Now.ToString("yyyy-MM-ddTHH:mm");
+        string url = $"http://{IP}:8666/STH/v1/contextEntities/type/Temp/id/urn:ngsi-ld:Temp:001/attributes/temperature?dateFrom={formattedDate}&lastN={numeroDeTemperturas}";
+        var response = await _httpClient.GetAsync(url);
 
 		if (response.IsSuccessStatusCode)
 		{

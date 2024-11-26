@@ -66,6 +66,7 @@
 
 
 					if (document.querySelector("#erro").textContent == "-- °C") {
+						console.log('Verifica Erro')
 						verificaErro(data.temperatures);
 					}
 
@@ -159,14 +160,12 @@
 		startMeasurement();
 
 		function verificaErro(temperaturas) {
-			// Inicializa o array temperaturasTeste se necessário
-			let temperaturasTeste = [];
 
 			// Adiciona as novas temperaturas ao array de teste
 			temperaturasTeste = temperaturasTeste.concat(temperaturas);
 
 			// Quando o array de teste atingir o tamanho esperado (4, neste caso)
-			if (temperaturasTeste.length == 4) {
+			if (temperaturasTeste.length >= 12) {
 				let temperaturasString = '';
 
 				temperaturasTeste.forEach((temp, index) => {
