@@ -11,7 +11,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th>@Html.DisplayNameFor(model => model.CodigoDoAluguel)</th>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
             <th>@Html.DisplayNameFor(model => model.CNPJ)</th>
             <th>@Html.DisplayNameFor(model => model.CodigoSensor)</th>
             <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
@@ -25,7 +25,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@Html.DisplayFor(modelItem => item.CodigoDoAluguel)</td>
+                <td>@Html.DisplayFor(modelItem => item.Id)</td>
                 <td>@Html.DisplayFor(modelItem => item.CNPJ)</td>
                 <td>@Html.DisplayFor(modelItem => item.CodigoSensor)</td>
                 <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>

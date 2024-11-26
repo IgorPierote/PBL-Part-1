@@ -8,7 +8,7 @@ namespace PBL_LP.DAO
         public List<SensorCategoriaViewModel> ListaSensor()
         {
             List<SensorCategoriaViewModel> lista = new List<SensorCategoriaViewModel>();
-            DataTable tabela = HelperDAO.ExecutaSelect("select Codigo,Nome from Sensor", null);
+            DataTable tabela = HelperDAO.ExecutaSelect("select id,Nome from Sensor", null);
             foreach (DataRow registro in tabela.Rows)
                 lista.Add(MontaSensorCategoria(registro));
             return lista;
@@ -18,7 +18,7 @@ namespace PBL_LP.DAO
         {
             SensorCategoriaViewModel c = new SensorCategoriaViewModel()
             {
-                Codigo = Convert.ToInt32(registro["Codigo"]),
+                Id = Convert.ToInt32(registro["id"]),
                 Nome = registro["Nome"].ToString()
             };
             return c;

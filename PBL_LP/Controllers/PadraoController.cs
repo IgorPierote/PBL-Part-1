@@ -88,7 +88,7 @@ namespace PBL_LP.Controllers
                 ModelState.AddModelError("Id", "Código já está em uso!");
             if (operacao == "A" && DAO.Consulta(model.Id) == null)
                 ModelState.AddModelError("Id", "Este registro não existe!");
-            if (model.Id <= 0)
+            if (model.Id < 0)
                 ModelState.AddModelError("Id", "Id inválido!");
         }
 

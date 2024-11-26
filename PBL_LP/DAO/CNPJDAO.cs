@@ -8,7 +8,7 @@ namespace PBL_LP.DAO
 		public List<CNPJViewModel> ListaCNPJ()
 		{
 			List<CNPJViewModel> lista = new List<CNPJViewModel>();
-			DataTable tabela = HelperDAO.ExecutaSelect("select CNPJ,NomeDaEmpresa from Empresa", null);
+			DataTable tabela = HelperDAO.ExecutaSelect("select id,NomeDaEmpresa from Empresa", null);
 			foreach (DataRow registro in tabela.Rows)
 				lista.Add(MontaCNPJ(registro));
 			return lista;
@@ -18,7 +18,7 @@ namespace PBL_LP.DAO
 		{
 			CNPJViewModel c = new CNPJViewModel()
 			{
-				CNPJ = registro["CNPJ"].ToString(),
+				Id = Convert.ToInt32(registro["id"]),
 				NomeEmpresa = registro["NomeDaEmpresa"].ToString()
 			};
 			return c;

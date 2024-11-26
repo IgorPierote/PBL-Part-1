@@ -20,8 +20,8 @@ namespace PBL_LP.DAO
         protected override SqlParameter[] CriaParametros(AluguelViewModel aluguel)
         {
             SqlParameter[] parametros = new SqlParameter[7];
-            parametros[0] = new SqlParameter("codigoDoAluguel", aluguel.CodigoDoAluguel);
-            parametros[1] = new SqlParameter("cnpj", aluguel.CNPJ);
+            parametros[0] = new SqlParameter("id", aluguel.Id);
+            parametros[1] = new SqlParameter("idEmpresa", aluguel.idEmpresa);
             parametros[2] = new SqlParameter("codigoSensor", aluguel.CodigoSensor);
             parametros[3] = new SqlParameter("quantidade", aluguel.Quantidade);
             parametros[4] = new SqlParameter("dataDeInicio", aluguel.DataDeInicio);
@@ -45,17 +45,31 @@ namespace PBL_LP.DAO
 
         protected override AluguelViewModel MontaModel(DataRow registro)
         {
-            AluguelViewModel a = new AluguelViewModel
+           if (registro.Table.Columns.Contains("CNPJ")){
+                AluguelViewModel a = new AluguelViewModel
+                {
+                    Id = Convert.ToInt32(registro["id"]),
+                    CNPJ = registro["CNPJ"].ToString(),
+                    CodigoSensor = Convert.ToInt32(registro["CodigoSensor"]),
+                    Quantidade = Convert.ToInt32(registro["Quantidade"]),
+                    DataDeInicio = Convert.ToDateTime(registro["DataDeInicio"]),
+                    DataDeFinalizacao = Convert.ToDateTime(registro["DataDeFinalizacao"]),
+                    Preco = Convert.ToDecimal(registro["Preco"])
+                };
+                return a;
+            }
+            AluguelViewModel b = new AluguelViewModel
             {
-                CodigoDoAluguel = Convert.ToInt32(registro["CodigoDoAluguel"]),
-                CNPJ = registro["CNPJ"].ToString(),
+
+                Id = Convert.ToInt32(registro["id"]),
                 CodigoSensor = Convert.ToInt32(registro["CodigoSensor"]),
                 Quantidade = Convert.ToInt32(registro["Quantidade"]),
                 DataDeInicio = Convert.ToDateTime(registro["DataDeInicio"]),
                 DataDeFinalizacao = Convert.ToDateTime(registro["DataDeFinalizacao"]),
                 Preco = Convert.ToDecimal(registro["Preco"])
             };
-            return a;
+
+            return b;
         }
 
         public AluguelViewModel Consulta(int id)
@@ -73,11 +87,11 @@ namespace PBL_LP.DAO
                 return MontaModel(tabela.Rows[0]);
         }
 
-        public List<AluguelViewModel> Listagem()
+        public override List<AluguelViewModel> Listagem()
         {
             List<AluguelViewModel> lista = new List<AluguelViewModel>();
 
-            DataTable tabela = HelperDAO.ExecutaProcSelect("spListagem", null);
+            DataTable tabela = HelperDAO.ExecutaProcSelect("sp_consulta_Aluguel", null);
 
             foreach (DataRow registro in tabela.Rows)
                 lista.Add(MontaModel(registro));

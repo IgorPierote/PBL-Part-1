@@ -16,8 +16,25 @@ namespace PBL_LP.Controllers
             GeraProximoId = true;
         }
 
+        public override IActionResult Index()
+        {
+            AluguelDAO aluguelDAO = new AluguelDAO();
+
+            try
+            {
+                var lista = aluguelDAO.Listagem();
+                return View(NomeViewIndex, lista);
+            }
+            catch (Exception erro)
+            {
+                return View("Error", new ErrorViewModel(erro.ToString()));
+            }
+        }
+
         protected override void PreencheDadosParaView(string operacao, AluguelViewModel model)
         {
+            model.DataDeInicio=DateTime.Now;
+            model.DataDeFinalizacao=DateTime.Now;
             base.PreencheDadosParaView(operacao, model); // Mantém a lógica base
             PreparaListaCNPJParaCombo(); // Prepara a lista de empresas
             PreparaListaSensoresParaCombo(); // Prepara a lista de sensores
@@ -32,7 +49,7 @@ namespace PBL_LP.Controllers
             listaCNPJS.Add(new SelectListItem("Selecione uma empresa...", "0"));
             foreach (var c in categorias)
             {
-                SelectListItem item = new SelectListItem(c.NomeEmpresa, c.CNPJ);
+                SelectListItem item = new SelectListItem(c.NomeEmpresa, c.Id.ToString());
                 listaCNPJS.Add(item);
             }
             ViewBag.CNPJS = listaCNPJS;
@@ -47,7 +64,7 @@ namespace PBL_LP.Controllers
             listaSensores.Add(new SelectListItem("Selecione um sensor...", "0"));
             foreach (var c in categorias)
             {
-                SelectListItem item = new SelectListItem(c.Nome, c.Codigo.ToString());
+                SelectListItem item = new SelectListItem(c.Nome, c.Id.ToString());
                 listaSensores.Add(item);
             }
             ViewBag.Sensores = listaSensores;

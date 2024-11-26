@@ -61,7 +61,7 @@ void setup() {
 
 // Variables for timing
 unsigned long previousMillis = 0;
-const long interval = 15000; // 15-second interval
+const long interval = 12000; // 12-second interval
 
 // Main loop function
 void loop() {

@@ -12,9 +12,11 @@ namespace PBL_LP.Models
         [RegularExpression(@"^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$", ErrorMessage = "CNPJ inválido")]
         public string CNPJ { get; set; } = string.Empty;
 
+        public int idEmpresa { get; set; }
+
         [Required(ErrorMessage = "O Código do Sensor é obrigatório")]
         [Display(Name = "Código do Sensor")]
-        [Range(1, int.MaxValue, ErrorMessage = "O Código do Sensor deve ser um número positivo")]
+        [Range(0, int.MaxValue, ErrorMessage = "O Código do Sensor deve ser um número positivo")]
         public int CodigoSensor { get; set; }
 
         [Required(ErrorMessage = "A Quantidade é obrigatória")]
