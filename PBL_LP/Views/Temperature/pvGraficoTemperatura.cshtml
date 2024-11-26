@@ -78,8 +78,8 @@
 						maiorTemperatura = Math.max(...temperaturaAcumulada)
 						menorTemperatura = Math.min(...temperaturaAcumulada)
 
-						document.querySelector("#min_temperature").textContent = menorTemperatura
-						document.querySelector("#max_temperature").textContent = maiorTemperatura
+						document.querySelector("#min_temperature").textContent = `${menorTemperatura.toFixed(2)} °C`; 
+						document.querySelector("#max_temperature").textContent = `${maiorTemperatura.toFixed(2)} °C`;
 					}
 
 					// Calcular a média das temperaturas acumuladas
@@ -112,6 +112,19 @@
 				.catch(error => console.error("Erro ao obter dados:", error));
 		}
 
+		function updateK() {
+			var trigger = document.querySelector('[name="Trigger"]').value;
+			fetch(`/Temperature/ColetaConstanteDeGanho`).then(response => response.json())
+				.then(data => {
+					console.log("Dados recebidos:", data); // Verifica o que está sendo retornado
+
+					const k = data.k;
+
+					document.querySelector("#k").textContent = `${k.toFixed(2)} °C/V`;
+				})
+				.catch(error => console.error("Erro ao obter dados:", error));
+		}
+
 		function startMeasurement() {
 			// Verifica o estado do botão de início
 			const startButtonText = document.querySelector("#startMeasurementButton").textContent;
@@ -121,6 +134,7 @@
 
 			// Atualiza o gráfico imediatamente
 			updateLastTemperature();
+			updateK();
 			updateGraph();
 
 			// Configura um intervalo para atualizar o gráfico a cada 60 segundos
@@ -141,6 +155,7 @@
 
 				// Atualiza a última temperatura
 				updateLastTemperature();
+				updateK();
 			}, 15000); // Intervalo de 15 segundos
 		}
 
@@ -184,8 +199,11 @@
 						console.log("Dados recebidos:", data);
 
 						// Supondo que o setPoint seja uma variável definida em algum lugar
-						let tempErro = setPoint - temperaturaRecente;
-						document.querySelector("#erro").textContent = `${tempErro.toFixed(2)} °C`;
+						if (data = true) {
+							let tempErro = setPoint - temperaturaRecente;
+							document.querySelector("#erro").textContent = `${tempErro.toFixed(2)} °C`;
+						}
+						
 					})
 					.catch(error => console.error("Erro ao obter dados:", error));
 

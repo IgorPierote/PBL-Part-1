@@ -6,12 +6,13 @@ const char* default_SSID = "S23 - Pierote"; // Wi-Fi network name
 const char* default_PASSWORD = "234567891"; // Wi-Fi network password
 const char* default_BROKER_MQTT = "191.235.241.244"; // MQTT Broker IP
 const int default_BROKER_PORT = 1883; // MQTT Broker port
-const char* default_TOPICO_SUBSCRIBE = "/TEF/temp001/cmd"; // MQTT subscription topic
-const char* default_TOPICO_PUBLISH_1 = "/TEF/temp001/attrs"; // MQTT publishing topic 1
-const char* default_TOPICO_PUBLISH_2 = "/TEF/temp001/attrs/t"; // MQTT publishing topic 2
-const char* default_ID_MQTT = "fiware_001"; // MQTT client ID
+const char* default_TOPICO_SUBSCRIBE = "/TEF/lamp002/cmd"; // MQTT subscription topic
+const char* default_TOPICO_PUBLISH_1 = "/TEF/lamp002/attrs"; // MQTT publishing topic 1
+const char* default_TOPICO_PUBLISH_2 = "/TEF/lamp002/attrs/t"; // MQTT publishing topic 2
+const char* default_TOPICO_PUBLISH_3 = "/TEF/lamp002/attrs/h"; // MQTT publishing topic 3
+const char* default_ID_MQTT = "fiware_002"; // MQTT client ID
 const int default_D4 = 2; // Onboard LED pin
-const char* topicPrefix = "temp001"; // Prefix for MQTT topics
+const char* topicPrefix = "lamp002"; // Prefix for MQTT topics
 
 // Variables for editable configurations
 char* SSID = const_cast<char*>(default_SSID);
@@ -21,6 +22,7 @@ int BROKER_PORT = default_BROKER_PORT;
 char* TOPICO_SUBSCRIBE = const_cast<char*>(default_TOPICO_SUBSCRIBE);
 char* TOPICO_PUBLISH_1 = const_cast<char*>(default_TOPICO_PUBLISH_1);
 char* TOPICO_PUBLISH_2 = const_cast<char*>(default_TOPICO_PUBLISH_2);
+char* TOPICO_PUBLISH_3 = const_cast<char*>(default_TOPICO_PUBLISH_3);
 char* ID_MQTT = const_cast<char*>(default_ID_MQTT);
 int D4 = default_D4;
 
@@ -182,10 +184,24 @@ void reconnectMQTT() {
 void handleTemperature() {
     const int potPin = 34; // Analog pin for temperature sensor
     int sensorValue = analogRead(potPin); // Read analog value
-    float voltage = sensorValue * (1 / 4095.0); // Convert to voltage
-    float tempCelsius = voltage * 100.0; // Convert to Celsius
+
+    float voltage = sensorValue * (3.3 / 4095.0);  // Read voltage
+
+    float temp1 = sensorValue * (1 / 4095.0); // Convert to Temp1
+    float tempCelsius = temp1 * 116.0; // Convert to Celsius
+
+    float k = tempCelsius/(voltage*3);
+
     String mensagem = String(tempCelsius, 2); // Format with two decimal places
+    String msg2 = String(k, 2);
+    Serial.print("Voltage: ");
+    Serial.println(voltage);
+
+    Serial.print("Ganho °C/V: ");
+    Serial.println(msg2.c_str());
+
     Serial.print("Temperature value: ");
     Serial.println(mensagem.c_str());
     MQTT.publish(TOPICO_PUBLISH_2, mensagem.c_str()); // Publish temperature to broker
+    MQTT.publish(TOPICO_PUBLISH_3, msg2.c_str()); // Publish gain to broker
 }

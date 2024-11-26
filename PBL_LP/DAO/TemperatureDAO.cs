@@ -12,10 +12,10 @@ public class TemperatureDAO
 {
 	private static string IP = "191.235.241.244";
 	private static string numeroDeTemperturas = "4";
-	private readonly string _apiUrl = $"http://{IP}:8666/STH/v1/contextEntities/type/Temp/id/urn:ngsi-ld:Temp:001/attributes/temperature?lastN={numeroDeTemperturas}"; // URL da sua API
-	private readonly string _apiUrlGetTemperature = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Temp:001/attrs/temperature";
-	private readonly string _switchLED = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Temp:001/attrs";
-	private readonly string _statusLED = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Temp:001/attrs/state";
+	private readonly string _apiUrl = $"http://{IP}:8666/STH/v1/contextEntities/type/Lamp/id/urn:ngsi-ld:Lamp:002/attributes/temperature?lastN={numeroDeTemperturas}"; // URL da sua API
+	private readonly string _apiUrlGetTemperature = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Lamp:002/attrs/temperature";
+	private readonly string _switchLED = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Lamp:002/attrs";
+	private readonly string _statusLED = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Lamp:002/attrs/state";
 
 	private readonly HttpClient _httpClient;
 
@@ -28,7 +28,7 @@ public class TemperatureDAO
 
 	public async Task SwitchLed(string command)
 	{
-		string url = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Temp:001/attrs";
+		string url = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Lamp:002/attrs";
 
 		var headers = new Dictionary<string, string>
 	{
@@ -106,7 +106,7 @@ public class TemperatureDAO
 	public async Task<List<TemperatureViewModel>> GetTemperatureDataAsync()
 	{
         string formattedDate = DateTime.Now.ToString("yyyy-MM-ddTHH:mm");
-        string url = $"http://{IP}:8666/STH/v1/contextEntities/type/Temp/id/urn:ngsi-ld:Temp:001/attributes/temperature?dateFrom={formattedDate}&lastN={numeroDeTemperturas}";
+        string url = $"http://{IP}:8666/STH/v1/contextEntities/type/Lamp/id/urn:ngsi-ld:Lamp:002/attributes/temperature?dateFrom={formattedDate}&lastN={numeroDeTemperturas}";
         var response = await _httpClient.GetAsync(url);
 
 		if (response.IsSuccessStatusCode)
@@ -121,9 +121,28 @@ public class TemperatureDAO
 		}
 	}
 
+
+
 	public async Task<double> GetLastTemperature()
 	{
 		var response = await _httpClient.GetAsync(_apiUrlGetTemperature);
+		if (response.IsSuccessStatusCode)
+		{
+			var content = await response.Content.ReadAsStringAsync();
+			var data = JsonConvert.DeserializeObject<LastTemperatureAPIResponse>(content);
+			double temp = Convert.ToDouble(data.value, System.Globalization.CultureInfo.InvariantCulture);
+			return temp;
+		}
+		else
+		{
+			throw new Exception("Erro ao acessar a API: " + response.StatusCode);
+		}
+	}
+
+	public async Task<double> GetK()
+	{
+		string url = $"http://{IP}:1026/v2/entities/urn:ngsi-ld:Lamp:002/attrs/humidity";
+		var response = await _httpClient.GetAsync(url);
 		if (response.IsSuccessStatusCode)
 		{
 			var content = await response.Content.ReadAsStringAsync();

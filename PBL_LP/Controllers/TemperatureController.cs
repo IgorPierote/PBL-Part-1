@@ -71,6 +71,15 @@ public class TemperatureController : Controller
 		});
 	}
 
+	public async Task<IActionResult> ColetaConstanteDeGanho()
+	{
+		var constanteDeGanho = await _temperatureDAO.GetK();
+		return Json(new
+		{
+			k = constanteDeGanho
+		});
+	}
+
 	public IActionResult RenderGraficoTemperatura(int setPoint)
 	{
 		TemperatureGraphViewModel gr = new TemperatureGraphViewModel();
