@@ -50,6 +50,7 @@ namespace PBL_LP.DAO
         {
             SqlParameter[] parametros = new SqlParameter[]
             {
+                new SqlParameter("id", usuario.Id),
                 new SqlParameter("cpf", usuario.CPF),
                 new SqlParameter("Nome", usuario.Nome),
                 new SqlParameter("email", usuario.Email),

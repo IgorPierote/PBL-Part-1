@@ -9,95 +9,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PBL_LP
 build_property.RootNamespace = PBL_LP
-build_property.ProjectDir = C:\Users\guind\Downloads\PBL-Part-1\PBL_LP\
+build_property.ProjectDir = C:\Users\Piero\Desktop\Workspace\C#\PBL-Part-1\PBL_LP\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\guind\Downloads\PBL-Part-1\PBL_LP
+build_property.MSBuildProjectDirectory = C:\Users\Piero\Desktop\Workspace\C#\PBL-Part-1\PBL_LP
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Aluguel/Form.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Aluguel/Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1Z3VlbFxGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Aluguel/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Aluguel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1Z3VlbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Empresa/Form.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Empresa/Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Empresa/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Empresa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Home/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Home/Privacy.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Login/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Sensor/form.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Sensor/form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yXGZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Sensor/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Sensor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vuc29yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Shared/Error.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Sobre/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Sobre/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Temperature/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Temperature/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcGVyYXR1cmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Temperature/pvGraficoTemperatura.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Temperature/pvGraficoTemperatura.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcGVyYXR1cmVccHZHcmFmaWNvVGVtcGVyYXR1cmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Usuario/ConsultaAvancada.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Usuario/ConsultaAvancada.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDb25zdWx0YUF2YW5jYWRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Usuario/Form.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Usuario/Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Usuario/Index.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Usuario/_UserList.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Usuario/_UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xfVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/_ViewImports.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/_ViewStart.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/guind/Downloads/PBL-Part-1/PBL_LP/Views/Shared/_Layout.cshtml]
+[C:/Users/Piero/Desktop/Workspace/C\#/PBL-Part-1/PBL_LP/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-n5mn9oyp07

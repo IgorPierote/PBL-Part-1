@@ -56,6 +56,7 @@ namespace PBL_LP.Controllers
             ValidaDados(model, "I");
             if (ModelState.IsValid)
             {
+                model.Id = DAO.ProximoId();
                 ((UsuarioDAO)DAO).Inserir(model);
                 return RedirectToAction("Index");
             }
