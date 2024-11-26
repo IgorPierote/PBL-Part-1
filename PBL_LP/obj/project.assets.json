@@ -514,19 +514,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guilh\\.nuget\\packages\\": {}
+    "C:\\Users\\Piero\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\PBL_LP.csproj",
+      "projectUniqueName": "C:\\Users\\Piero\\Desktop\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
       "projectName": "PBL_LP",
-      "projectPath": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\PBL_LP.csproj",
-      "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\obj\\",
+      "projectPath": "C:\\Users\\Piero\\Desktop\\PBL-Part-1\\PBL_LP\\PBL_LP.csproj",
+      "packagesPath": "C:\\Users\\Piero\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Piero\\Desktop\\PBL-Part-1\\PBL_LP\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -534,6 +539,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -585,7 +591,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -21,6 +21,22 @@ namespace PBL_LP.Controllers
         }
 
         [HttpGet]
+        [Route("Delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                ((UsuarioDAO)DAO).Excluir(id);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                // Log the error (uncomment ex variable name and write a log.)
+                return RedirectToAction("Index", new { errorMessage = ex.Message });
+            }
+        }
+
+        [HttpGet]
         [Route("")]
         [Route("Index")]
         public IActionResult Index(string cpfFilter = null, string nomeFilter = null, string telefoneFilter = null, DateTime? dataNascimentoFilter = null)
