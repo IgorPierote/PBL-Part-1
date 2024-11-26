@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
     }
 </head>
-<body>
+<body class="@(ViewContext.RouteData.Values["controller"].ToString() == "Login" ? "login-page" : "")">
     <header>
         @if (!(ViewContext.RouteData.Values["controller"].ToString() == "Login" && ViewContext.RouteData.Values["action"].ToString() == "Index"))
 

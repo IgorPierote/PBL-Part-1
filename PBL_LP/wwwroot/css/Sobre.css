@@ -1,68 +1,95 @@
-﻿/* Define o estilo para a página de sobre */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+﻿/* Reset básico e fontes */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Centraliza o título e o texto */
-h1 {
-    text-align: center;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
     color: #333;
-    font-size: 2.5rem;
-    margin-top: 20px;
+    line-height: 1.6;
 }
 
-/* Alinha os parágrafos com o texto */
-p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #555;
-    margin: 10px 0;
-}
-
-/* Estiliza a div que contém as informações dos desenvolvedores */
+/* Container principal */
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização do título */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Estilização do parágrafo */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Contêiner dos cards dos desenvolvedores */
+.developer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 30px;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-    /* Cada desenvolvedor será apresentado em um bloco com a foto e nome */
-    .container img {
-        width: 150px; /* Tamanho fixo para as imagens */
-        height: 150px;
-        object-fit: cover; /* Para garantir que a imagem fique bem ajustada */
-        border-radius: 50%; /* Torna as imagens circulares */
-        border: 2px solid #ccc; /* Adiciona uma borda sutil */
+/* Estilização do card de cada desenvolvedor */
+.developer-card {
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .developer-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
-    /* Estilo para o texto de cada desenvolvedor */
-    .container p {
-        text-align: center;
-        width: 100%; /* Faz o texto ocupar toda a largura do item */
-        margin-top: 5px;
+    /* Estilização das imagens */
+    .developer-card img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        border: 2px solid #ddd;
+    }
+
+    /* Estilização do nome do desenvolvedor */
+    .developer-card p {
+        font-size: 1.1rem;
+        font-weight: bold;
         color: #333;
     }
 
-        /* Adiciona uma margem inferior nos parágrafos */
-        .container p:last-child {
-            margin-bottom: 40px;
-        }
-
-/* Ajusta a responsividade das imagens e do layout para dispositivos móveis */
+/* Responsividade: ajustes para telas menores */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Coloca os itens em uma coluna em vez de linha */
-        gap: 15px;
+    .developer-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-        .container img {
-            width: 120px;
-            height: 120px;
+    .developer-card {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+        .developer-card img {
+            width: 100px;
+            height: 100px;
         }
 }

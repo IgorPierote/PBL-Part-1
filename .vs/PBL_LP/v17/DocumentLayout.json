@@ -1,62 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\",
+  "WorkspaceRootPath": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\temperaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\temperaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\temperature\\pvgraficotemperatura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\temperature\\pvgraficotemperatura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\temperature\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\temperature\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\temperaturedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\temperaturedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\aluguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main (2)\\pbl-part-1-main\\pbl_lp\\controllers\\aluguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\aluguelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\alugueldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\alugueldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main (2)\\pbl-part-1-main\\pbl_lp\\views\\sobre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\sobre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\padraodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\padraodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main (2)\\pbl-part-1-main\\pbl_lp\\wwwroot\\css\\sobre.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\wwwroot\\css\\sobre.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\controllers\\padraocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\controllers\\padraocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main (2)\\pbl-part-1-main\\pbl_lp\\dao\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\sensorcategoriadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\sensorcategoriadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main (2)\\pbl-part-1-main\\pbl_lp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\dao\\cnpjdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\dao\\cnpjdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main (2)\\pbl-part-1-main\\pbl_lp\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\aluguel\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\aluguel\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\aluguel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\aluguel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\models\\aluguelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\models\\aluguelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guind\\downloads\\pbl-part-1\\pbl_lp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|c:\\users\\guilh\\downloads\\pbl-part-1-main (2)\\pbl-part-1-main\\pbl_lp\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{51E33012-2A8F-448D-A9C8-D52B4DFAD0D4}|PBL_LP\\PBL_LP.csproj|solutionrelative:pbl_lp\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,182 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Temperature\\Index.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Temperature\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Temperature\\Index.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Temperature\\Index.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADoAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T11:52:03.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TemperatureController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\TemperatureController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\TemperatureController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\TemperatureController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\TemperatureController.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAuwG8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T11:47:38.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "pvGraficoTemperatura.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Temperature\\pvGraficoTemperatura.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Temperature\\pvGraficoTemperatura.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Temperature\\pvGraficoTemperatura.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Temperature\\pvGraficoTemperatura.cshtml",
-              "ViewState": "AQIAAK0AAAAAAAAAAAAewMUAAAAUAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Views\\Sobre\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Sobre\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Views\\Sobre\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Sobre\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T11:46:25.001Z",
+              "WhenOpened": "2024-11-26T20:02:11.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sobre.css",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\wwwroot\\css\\Sobre.css",
+              "RelativeDocumentMoniker": "PBL_LP\\wwwroot\\css\\Sobre.css",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\wwwroot\\css\\Sobre.css",
+              "RelativeToolTip": "PBL_LP\\wwwroot\\css\\Sobre.css",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAcwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-26T20:01:20.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TemperatureDAO.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\TemperatureDAO.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\TemperatureDAO.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\TemperatureDAO.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\TemperatureDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI8AAABCAAAA",
+              "Title": "ConexaoBD.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\DAO\\ConexaoBD.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\DAO\\ConexaoBD.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\DAO\\ConexaoBD.cs",
+              "RelativeToolTip": "PBL_LP\\DAO\\ConexaoBD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T11:39:07.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PadraoDAO.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\PadraoDAO.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\PadraoDAO.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\PadraoDAO.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\PadraoDAO.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAYwEkAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:37:07.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SensorCategoriaDAO.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\SensorCategoriaDAO.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\SensorCategoriaDAO.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\SensorCategoriaDAO.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\SensorCategoriaDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:29:09.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CNPJDAO.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\CNPJDAO.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\CNPJDAO.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\CNPJDAO.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\CNPJDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:15:12.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Usuario\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T04:14:05.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PadraoController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\PadraoController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\PadraoController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\PadraoController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\PadraoController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAwwBQAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:12:38.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Aluguel\\Index.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Aluguel\\Index.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Aluguel\\Index.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Aluguel\\Index.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAlwBwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T04:07:13.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AluguelController.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\AluguelController.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\AluguelController.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Controllers\\AluguelController.cs",
-              "RelativeToolTip": "PBL_LP\\Controllers\\AluguelController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCQAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:06:35.58Z",
+              "WhenOpened": "2024-11-26T20:00:25.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AluguelDAO.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\AluguelDAO.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\DAO\\AluguelDAO.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\DAO\\AluguelDAO.cs",
-              "RelativeToolTip": "PBL_LP\\DAO\\AluguelDAO.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAYwFkAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:06:25.061Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T19:55:40.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AluguelViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Models\\AluguelViewModel.cs",
-              "RelativeDocumentMoniker": "PBL_LP\\Models\\AluguelViewModel.cs",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Models\\AluguelViewModel.cs",
-              "RelativeToolTip": "PBL_LP\\Models\\AluguelViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAQAAAA",
+              "DocumentIndex": 0,
+              "Title": "AluguelController.cs",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Controllers\\AluguelController.cs",
+              "RelativeDocumentMoniker": "PBL_LP\\Controllers\\AluguelController.cs",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Controllers\\AluguelController.cs",
+              "RelativeToolTip": "PBL_LP\\Controllers\\AluguelController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAtwBgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:05:09.872Z"
+              "WhenOpened": "2024-11-26T19:57:31.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form.cshtml",
-              "DocumentMoniker": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Aluguel\\Form.cshtml",
-              "RelativeDocumentMoniker": "PBL_LP\\Views\\Aluguel\\Form.cshtml",
-              "ToolTip": "C:\\Users\\guind\\Downloads\\PBL-Part-1\\PBL_LP\\Views\\Aluguel\\Form.cshtml",
-              "RelativeToolTip": "PBL_LP\\Views\\Aluguel\\Form.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "DocumentIndex": 6,
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\wwwroot\\css\\Login.css",
+              "RelativeDocumentMoniker": "PBL_LP\\wwwroot\\css\\Login.css",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\wwwroot\\css\\Login.css",
+              "RelativeToolTip": "PBL_LP\\wwwroot\\css\\Login.css",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-26T19:57:11.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\guilh\\Downloads\\PBL-Part-1-main (2)\\PBL-Part-1-main\\PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PBL_LP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwBQAAABmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T03:53:58.095Z"
+              "WhenOpened": "2024-11-26T19:55:44.377Z",
+              "EditorCaption": ""
             }
           ]
         }
